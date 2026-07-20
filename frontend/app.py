@@ -6,31 +6,43 @@ st.title("⚖️ LegalRAG")
 
 st.write(
     "Temporally-Aware Multi-Hop Retrieval-Augmented Generation "
-    "for Indian Legal Question Answering"
+    "Framework for Indian Legal Question Answering"
 )
 
 
-query = st.text_input(
-    "Ask your legal question:"
+question = st.text_input(
+    "Enter your legal question:"
 )
 
 
-if st.button("Submit"):
+if st.button("Ask"):
 
-    if query:
-        response = requests.get(
-            "http://127.0.0.1:8000"
+    if question:
+
+        response = requests.post(
+            "http://127.0.0.1:8000/ask",
+            json={
+                "question": question
+            }
         )
 
         if response.status_code == 200:
-            data = response.json()
 
-            st.success("Backend Connected Successfully")
+            result = response.json()
 
-            st.json(data)
+            st.success("Response Generated")
+
+            st.write("### Question")
+            st.write(result["question"])
+
+            st.write("### Answer")
+            st.write(result["answer"])
+
+            st.write("### Status")
+            st.write(result["status"])
 
         else:
-            st.error("Backend connection failed")
+            st.error("Backend Error")
 
     else:
         st.warning("Please enter a question")
