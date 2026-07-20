@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+streamlit
+langchain
+langchain-community
+faiss-cpu
+sentence-transformers
+transformers
+torch
+rank-bm25
+pandas
+numpy
+python-dotenv
+pydantic
