@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "query": "What is the punishment for theft?",
+    "correct_section": "303"
+  },
+  {
+    "id": 2,
+    "query": "What constitutes theft?",
+    "correct_section": "303"
+  },
+  {
+    "id": 3,
+    "query": "What is the punishment for snatching?",
+    "correct_section": "304"
+  },
+  {
+    "id": 4,
+    "query": "What is snatching?",
+    "correct_section": "304"
+  },
+  {
+    "id": 5,
+    "query": "What is the punishment for extortion?",
+    "correct_section": "308"
+  },
+  {
+    "id": 6,
+    "query": "What is robbery?",
+    "correct_section": "309"
+  },
+  {
+    "id": 7,
+    "query": "What is dacoity?",
+    "correct_section": "310"
+  },
+  {
+    "id": 8,
+    "query": "What is dishonest misappropriation of property?",
+    "correct_section": "314"
+  },
+  {
+    "id": 9,
+    "query": "What is the punishment for dishonest misappropriation of property?",
+    "correct_section": "314"
+  },
+  {
+    "id": 10,
+    "query": "What is criminal breach of trust?",
+    "correct_section": "316"
+  },
+  {
+    "id": 11,
+    "query": "What is stolen property?",
+    "correct_section": "317"
+  },
+  {
+    "id": 12,
+    "query": "What is the punishment for receiving stolen property?",
+    "correct_section": "317"
+  },
+  {
+    "id": 13,
+    "query": "What is cheating?",
+    "correct_section": "318"
+  },
+  {
+    "id": 14,
+    "query": "What is the punishment for cheating?",
+    "correct_section": "318"
+  },
+  {
+    "id": 15,
+    "query": "What is murder?",
+    "correct_section": "103"
+  },
+  {
+    "id": 16,
+    "query": "What is the punishment for murder?",
+    "correct_section": "103"
+  },
+  {
+    "id": 17,
+    "query": "What is culpable homicide?",
+    "correct_section": "105"
+  },
+  {
+    "id": 18,
+    "query": "What is attempt to murder?",
+    "correct_section": "109"
+  },
+  {
+    "id": 19,
+    "query": "What is criminal intimidation?",
+    "correct_section": null
+  },
+  {
+    "id": 20,
+    "query": "What is wrongful confinement?",
+    "correct_section": null
+  }
+]
