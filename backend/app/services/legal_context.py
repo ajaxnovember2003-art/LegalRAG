@@ -1,18 +1,42 @@
+"""
+LegalRAG - Legal Context Utilities
+------
+
+Utilities for identifying legal sections and extracting
+specific legal information from retrieved provisions.
+
+Important:
+    These functions operate only on retrieved text.
+    They do not generate legal conclusions.
+"""
+
 import re
+from typing import Any, Dict, List, Optional
 
 
-def extract_section_number(text):
+# ============================================================
+# SECTION EXTRACTION
+# ============================================================
+
+def extract_section_number(
+    text: str
+) -> Optional[str]:
     """
-    Extract section number from the beginning of a legal chunk.
+    Extract a section number from the beginning of a legal chunk.
 
-    Example:
+    Examples:
+
         '303. (1) Whoever...' -> '303'
+        '318. Whoever...'    -> '318'
     """
 
     if not text:
         return None
 
-    match = re.match(r"^\s*(\d+)\.", text)
+    match = re.match(
+        r"^\s*(\d+)\.",
+        text
+    )
 
     if match:
         return match.group(1)
@@ -21,80 +45,151 @@ def extract_section_number(text):
 
 
 # ============================================================
-# OFFENCE -> PRIMARY SECTION MAPPING
+# OFFENCE → PRIMARY SECTION MAPPING
 # ============================================================
 
 PRIMARY_OFFENCE_SECTIONS = {
+
     "theft": "303",
+
     "snatching": "304",
+
 }
 
 
-def select_relevant_section(results, detected_offence=None):
+# ============================================================
+# SECTION LOOKUP
+# ============================================================
+
+def find_section_result(
+    results: List[Dict[str, Any]],
+    target_section: str
+) -> Optional[Dict[str, Any]]:
     """
-    Select the primary legal section for the detected offence.
+    Find a retrieval result matching an exact section.
+    """
+
+    if not results:
+        return None
+
+    target_section = str(
+        target_section
+    ).strip()
+
+    for result in results:
+
+        metadata = result.get(
+            "metadata",
+            {}
+        )
+
+        section = str(
+            metadata.get(
+                "section",
+                ""
+            )
+        ).strip()
+
+        if section == target_section:
+            return result
+
+    return None
+
+
+# ============================================================
+# OFFENCE SECTION SELECTION
+# ============================================================
+
+def select_relevant_section(
+    results: List[Dict[str, Any]],
+    detected_offence: Optional[str] = None
+) -> Optional[Dict[str, Any]]:
+    """
+    Select the most relevant legal section.
 
     Priority:
-    1. Explicit offence-to-section mapping
-    2. Exact section metadata match
-    3. Strong definition match
-    4. First result fallback
+
+        1. Explicit offence → section mapping
+        2. Exact definition match
+        3. Section metadata match
+        4. First ranked retrieval result
     """
 
     if not results:
         return None
 
     # --------------------------------------------------------
-    # 1. Use explicit offence -> primary section mapping
+    # 1. Explicit mapping
     # --------------------------------------------------------
 
     if detected_offence:
 
-        offence = detected_offence.strip().lower()
+        offence = (
+            detected_offence
+            .strip()
+            .lower()
+        )
 
-        target_section = PRIMARY_OFFENCE_SECTIONS.get(offence)
+        target_section = (
+            PRIMARY_OFFENCE_SECTIONS
+            .get(offence)
+        )
 
         if target_section:
 
-            for result in results:
+            result = find_section_result(
+                results,
+                target_section
+            )
 
-                metadata = result.get("metadata", {})
-
-                section = str(
-                    metadata.get("section", "")
-                ).strip()
-
-                if section == target_section:
-                    return result
+            if result is not None:
+                return result
 
     # --------------------------------------------------------
-    # 2. Look for a result whose section text DEFINES
-    #    the offence rather than merely mentioning it
+    # 2. Definition matching
     # --------------------------------------------------------
 
     if detected_offence:
 
-        offence = detected_offence.strip().lower()
+        offence = (
+            detected_offence
+            .strip()
+            .lower()
+        )
+
+        escaped = re.escape(
+            offence
+        )
 
         definition_patterns = [
-            rf"is said to commit {re.escape(offence)}",
-            rf"is {re.escape(offence)}",
-            rf"whoever commits {re.escape(offence)}",
-            rf"commits {re.escape(offence)}",
+
+            rf"\bis\s+said\s+to\s+commit\s+{escaped}\b",
+
+            rf"\bis\s+{escaped}\b",
+
+            rf"\bwhoever\s+commits\s+{escaped}\b",
+
+            rf"\bcommits\s+{escaped}\b",
+
         ]
 
         for result in results:
 
-            text = result.get("text", "").lower()
+            text = result.get(
+                "text",
+                ""
+            ).lower()
 
             for pattern in definition_patterns:
 
-                if re.search(pattern, text):
-
+                if re.search(
+                    pattern,
+                    text
+                ):
                     return result
 
     # --------------------------------------------------------
-    # 3. Fallback
+    # 3. First ranked result
     # --------------------------------------------------------
 
     return results[0]
@@ -104,22 +199,18 @@ def select_relevant_section(results, detected_offence=None):
 # PUNISHMENT EXTRACTION
 # ============================================================
 
-def extract_punishment_text(text):
+def extract_punishment_text(
+    text: str
+) -> str:
     """
-    Extract the punishment portion of a legal section.
+    Extract the punishment statement from a retrieved
+    legal provision.
 
-    Handles:
-        shall be punished...
-        Provided that...
-        second/subsequent conviction...
+    The function only extracts existing text.
     """
 
     if not text:
         return ""
-
-    # --------------------------------------------------------
-    # Find punishment statement
-    # --------------------------------------------------------
 
     match = re.search(
         r"(shall\s+be\s+punished\b.*)",
@@ -127,17 +218,75 @@ def extract_punishment_text(text):
         re.IGNORECASE | re.DOTALL
     )
 
-    if match:
+    if not match:
+        return ""
 
-        punishment = match.group(1).strip()
+    punishment = (
+        match.group(1)
+        .strip()
+    )
 
-        # Remove obvious PDF page/header contamination
-        punishment = re.split(
-            r"\bSEC\.\s*\d+\b",
-            punishment,
-            flags=re.IGNORECASE
-        )[0]
+    # Remove contamination from the next section
+    punishment = re.split(
+        r"\bSEC\.\s*\d+\b",
+        punishment,
+        flags=re.IGNORECASE
+    )[0]
 
-        return punishment.strip()
+    return punishment.strip()
 
-    return ""
+
+# ============================================================
+# LEGAL EVIDENCE EXTRACTION
+# ============================================================
+
+def extract_legal_evidence(
+    result: Optional[Dict[str, Any]]
+) -> Dict[str, Any]:
+    """
+    Extract a standardized legal evidence record from
+    one retrieval result.
+    """
+
+    if result is None:
+        return {}
+
+    metadata = result.get(
+        "metadata",
+        {}
+    )
+
+    text = result.get(
+        "text",
+        ""
+    )
+
+    section = str(
+        metadata.get(
+            "section",
+            ""
+        )
+    ).strip()
+
+    return {
+        "section": section,
+        "document": metadata.get(
+            "document",
+            "Unknown document"
+        ),
+        "year": metadata.get(
+            "year",
+            ""
+        ),
+        "source": metadata.get(
+            "source",
+            "Unknown source"
+        ),
+        "text": text,
+        "punishment": extract_punishment_text(
+            text
+        ),
+        "retrieval_score": result.get(
+            "score"
+        )
+    }

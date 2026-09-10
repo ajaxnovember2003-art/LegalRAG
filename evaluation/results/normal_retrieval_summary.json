@@ -1,0 +1,30 @@
+{
+    "benchmark": "normal",
+    "num_queries": 20,
+    "metrics": {
+        "dense": {
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr": 1.0
+        },
+        "bm25": {
+            "recall_at_1": 0.5,
+            "recall_at_3": 0.7222222222222222,
+            "recall_at_5": 0.7222222222222222,
+            "mrr": 0.6149691358024691
+        },
+        "rrf": {
+            "recall_at_1": 0.7222222222222222,
+            "recall_at_3": 0.8333333333333334,
+            "recall_at_5": 1.0,
+            "mrr": 0.7953703703703704
+        },
+        "legal_reranker": {
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr": 1.0
+        }
+    }
+}

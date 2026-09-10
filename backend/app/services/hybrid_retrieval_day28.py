@@ -51,29 +51,22 @@ LEGAL_CONCEPTS = {
     "murder": [
         "murder",
         "intentionally causes death",
-        "intentionally causes the death",
         "causes the death of another",
         "causes death",
         "intention to cause death",
         "intending to cause death",
         "intentional killing",
         "kills another person",
-        "causes another person's death",
     ],
 
     "culpable homicide": [
         "culpable homicide",
         "causes death",
-        "causes another person's death",
         "knowledge likely to cause death",
         "knowledge that the act is likely to cause death",
         "intention of causing death",
         "intention to cause death",
         "act likely to cause death",
-        "act that causes death",
-        "required intention or knowledge",
-        "intention or knowledge regarding the likelihood of death",
-        "knowledge regarding the likelihood of death",
     ],
 
     "attempt to murder": [
@@ -82,15 +75,11 @@ LEGAL_CONCEPTS = {
         "attempt to cause death",
         "attempting to cause death",
         "act towards causing death",
-        "act toward causing death",
+        "act towards commission",
         "direct step towards causing death",
-        "direct step toward causing death",
         "death does not occur",
         "victim survives",
-        "the victim survives",
-        "but death does not occur",
-        "towards causing another person's death",
-        "toward causing another person's death",
+        "survives",
     ],
 
     "theft": [
@@ -170,9 +159,6 @@ LEGAL_CONCEPTS = {
         "delivery of property",
         "induces a person to deliver property",
         "transfer property",
-        "transfers property",
-        "cause another person to transfer property",
-        "deception to cause transfer",
     ],
 
     "wrongful restraint": [
@@ -193,7 +179,6 @@ LEGAL_CONCEPTS = {
         "prevents another from leaving",
         "restricted area",
         "moving beyond certain limits",
-        "prevents a person from moving",
     ],
 
     "criminal intimidation": [
@@ -207,8 +192,6 @@ LEGAL_CONCEPTS = {
         "property",
         "cause alarm",
         "cause fear",
-        "intention of causing fear",
-        "in order to cause alarm",
     ],
 
     "rape": [
@@ -219,8 +202,6 @@ LEGAL_CONCEPTS = {
         "sexual intercourse without consent",
         "against consent",
         "sexual act without consent",
-        "engages in sexual intercourse",
-        "sexual intercourse with another person",
     ],
 
     "sexual harassment": [
@@ -231,262 +212,9 @@ LEGAL_CONCEPTS = {
         "unwelcome sexual conduct",
         "sexual remarks toward",
         "unwelcome sexual remarks",
-        "unwelcome sexual behaviour toward",
-        "unwelcome sexual behavior toward",
-        "sexual remarks or",
     ],
 }
 
-# ============================================================
-# LEGAL DISTINCTIONS
-# ============================================================
-
-LEGAL_DISTINCTIONS = {
-
-    "murder": {
-        "positive": [
-            "intention to cause death",
-            "intentionally causes death",
-            "intending to cause death",
-            "intentional killing",
-        ],
-        "negative": [
-            "death does not occur",
-            "victim survives",
-            "attempt to murder",
-            "knowledge likely to cause death",
-        ],
-    },
-
-    "culpable homicide": {
-        "positive": [
-            "knowledge likely to cause death",
-            "knowledge that the act is likely to cause death",
-            "act likely to cause death",
-            "causes death",
-        ],
-        "negative": [
-            "death does not occur",
-            "victim survives",
-            "attempt to murder",
-            "intention to cause death",
-        ],
-    },
-
-    "attempt to murder": {
-        "positive": [
-            "attempt to cause death",
-            "attempting to cause death",
-            "act towards causing death",
-            "death does not occur",
-            "victim survives",
-        ],
-        "negative": [
-            "causes death",
-            "death occurs",
-        ],
-    },
-
-    "theft": {
-        "positive": [
-            "dishonestly takes",
-            "movable property",
-            "moves property",
-            "without consent",
-        ],
-        "negative": [
-            "fear of injury",
-            "delivery of property",
-            "entrusted with property",
-            "deception",
-        ],
-    },
-
-    "robbery": {
-        "positive": [
-            "fear of instant hurt",
-            "instant hurt",
-            "instant death",
-            "violence",
-            "theft",
-            "extortion",
-        ],
-        "negative": [
-            "five or more persons",
-            "entrusted with property",
-            "deception",
-        ],
-    },
-
-    "dacoity": {
-        "positive": [
-            "five or more persons",
-            "five or more",
-            "jointly commit robbery",
-            "robbery",
-        ],
-        "negative": [
-            "single person",
-            "two persons",
-        ],
-    },
-
-    "extortion": {
-        "positive": [
-            "fear of injury",
-            "fear of harm",
-            "delivery of property",
-            "dishonestly induces",
-            "putting a person in fear",
-        ],
-        "negative": [
-            "takes movable property",
-            "without consent",
-            "entrusted with property",
-        ],
-    },
-
-    "criminal breach of trust": {
-        "positive": [
-            "entrusted",
-            "entrusted with property",
-            "entrusted with dominion",
-            "dominion over property",
-            "dishonestly misappropriates",
-            "dishonestly converts",
-        ],
-        "negative": [
-            "deception",
-            "induces a person to deliver property",
-            "fear of injury",
-        ],
-    },
-
-    "stolen property": {
-        "positive": [
-            "stolen property",
-            "dishonestly receives",
-            "retains stolen property",
-            "knowing it to be stolen",
-        ],
-        "negative": [
-            "entrusted with property",
-            "deception",
-            "fear of injury",
-        ],
-    },
-
-    "receiving stolen property": {
-        "positive": [
-            "dishonestly receives",
-            "dishonestly receiving",
-            "retains stolen property",
-            "knowing it to be stolen",
-        ],
-        "negative": [
-            "deception",
-            "entrusted with property",
-        ],
-    },
-
-    "cheating": {
-        "positive": [
-            "deception",
-            "deceives",
-            "dishonestly induces",
-            "dishonestly inducing",
-            "delivery of property",
-            "induces a person to deliver property",
-            "transfer property",
-        ],
-        "negative": [
-            "fear of injury",
-            "entrusted with property",
-            "stolen property",
-        ],
-    },
-
-    "wrongful restraint": {
-        "positive": [
-            "voluntarily obstructs",
-            "voluntarily obstruct",
-            "prevents a person from proceeding",
-            "cannot proceed",
-            "right to proceed",
-        ],
-        "negative": [
-            "prevents a person from leaving",
-            "confined within limits",
-            "restricted area",
-        ],
-    },
-
-    "wrongful confinement": {
-        "positive": [
-            "wrongfully confines",
-            "confined within limits",
-            "prevents a person from leaving",
-            "restricted area",
-            "moving beyond certain limits",
-        ],
-        "negative": [
-            "cannot proceed",
-            "right to proceed",
-            "voluntarily obstructs",
-        ],
-    },
-
-    "criminal intimidation": {
-        "positive": [
-            "threatens",
-            "threat",
-            "injury",
-            "harm",
-            "reputation",
-            "property",
-            "cause alarm",
-            "cause fear",
-        ],
-        "negative": [
-            "sexual remarks",
-            "sexual behaviour",
-            "sexual behavior",
-            "sexual intercourse",
-        ],
-    },
-
-    "rape": {
-        "positive": [
-            "sexual intercourse",
-            "without consent",
-            "without the consent",
-            "against consent",
-            "sexual act without consent",
-        ],
-        "negative": [
-            "sexual remarks",
-            "sexual harassment",
-            "unwelcome sexual behaviour",
-            "unwelcome sexual behavior",
-        ],
-    },
-
-    "sexual harassment": {
-        "positive": [
-            "sexual remarks",
-            "unwelcome sexual behaviour",
-            "unwelcome sexual behavior",
-            "unwelcome sexual conduct",
-            "sexual remarks toward",
-            "unwelcome sexual remarks",
-        ],
-        "negative": [
-            "sexual intercourse",
-            "without consent",
-            "causes death",
-        ],
-    },
-}
 
 # ============================================================
 # QUERY OFFENCE DETECTION
@@ -497,97 +225,83 @@ def detect_offence(query):
     q = query.lower()
 
     # --------------------------------------------------------
-    # MOST SPECIFIC OFFENCES FIRST
+    # EXACT OFFENCE NAME HAS HIGHEST PRIORITY
     # --------------------------------------------------------
 
-    # Attempt to murder
-    if (
-        "attempt to murder" in q
-        or "attempts to cause death" in q
-        or "attempt to cause death" in q
-        or "attempting to cause death" in q
-        or "act towards causing death" in q
-        or "direct step towards causing death" in q
-        or (
-            (
-                "death does not occur" in q
-                or "victim survives" in q
-            )
-            and "death" in q
-        )
-    ):
-        return "attempt to murder"
+    exact_matches = []
 
-    # --------------------------------------------------------
-    # CULPABLE HOMICIDE
-    # --------------------------------------------------------
-
-    if (
-        "culpable homicide" in q
-        or (
-            "causes death" in q
-            and (
-                "knowledge" in q
-                or "likely to cause death" in q
-            )
-        )
-    ):
-        return "culpable homicide"
-
-    # --------------------------------------------------------
-    # MURDER
-    # --------------------------------------------------------
-
-    if (
-        "murder" in q
-        or "intentionally causes the death" in q
-        or "intentionally causes death" in q
-        or "intention to cause death" in q
-        or "intending to cause death" in q
-        or "intentional killing" in q
-    ):
-        return "murder"
-
-    # --------------------------------------------------------
-    # OTHER OFFENCES
-    # --------------------------------------------------------
-
-    offences = sorted(
-        OFFENCE_SECTIONS.keys(),
-        key=len,
-        reverse=True
-    )
-
-    for offence in offences:
+    for offence in OFFENCE_SECTIONS:
 
         if offence in q:
-            return offence
+
+            exact_matches.append(
+                offence
+            )
+
+    if exact_matches:
+
+        return max(
+            exact_matches,
+            key=len
+        )
 
     # --------------------------------------------------------
     # CONCEPT-BASED DETECTION
     # --------------------------------------------------------
 
-    concept_matches = {}
+    offence_scores = {}
 
     for offence, phrases in LEGAL_CONCEPTS.items():
 
-        matches = sum(
-            1
-            for phrase in phrases
-            if phrase.lower() in q
-        )
+        score = 0.0
 
-        if matches > 0:
-            concept_matches[offence] = matches
+        for phrase in phrases:
 
-    if concept_matches:
+            phrase_lower = phrase.lower()
 
-        return max(
-            concept_matches,
-            key=concept_matches.get
-        )
+            if phrase_lower not in q:
+                continue
 
-    return None
+            words = phrase_lower.split()
+
+            # Longer phrases provide stronger evidence
+            if len(words) >= 5:
+                score += 0.50
+
+            elif len(words) == 4:
+                score += 0.40
+
+            elif len(words) == 3:
+                score += 0.25
+
+            elif len(words) == 2:
+                score += 0.15
+
+            else:
+                score += 0.05
+
+        offence_scores[
+            offence
+        ] = score
+
+    if not offence_scores:
+
+        return None
+
+    best_offence = max(
+        offence_scores,
+        key=offence_scores.get
+    )
+
+    best_score = offence_scores[
+        best_offence
+    ]
+
+    if best_score < 0.25:
+
+        return None
+
+    return best_offence
 
 # ============================================================
 # QUERY INTENT
@@ -684,6 +398,7 @@ def concept_score(
 ):
 
     if not offence:
+
         return 0.0
 
     text_lower = text.lower()
@@ -694,74 +409,22 @@ def concept_score(
     )
 
     if not phrases:
+
         return 0.0
 
-    matched = sum(
-        1
-        for phrase in phrases
-        if phrase.lower() in text_lower
+    matched = 0
+
+    for phrase in phrases:
+
+        if phrase.lower() in text_lower:
+
+            matched += 1
+
+    return (
+        matched /
+        len(phrases)
     )
 
-    return matched / len(phrases)
-
-# ============================================================
-# LEGAL DISTINCTION SCORE
-# ============================================================
-
-def distinction_score(
-    offence,
-    text
-):
-
-    if not offence:
-        return 0.0
-
-    text_lower = text.lower()
-
-    rules = LEGAL_DISTINCTIONS.get(
-        offence
-    )
-
-    if not rules:
-        return 0.0
-
-    positive = rules.get(
-        "positive",
-        []
-    )
-
-    negative = rules.get(
-        "negative",
-        []
-    )
-
-    positive_matches = sum(
-        1
-        for phrase in positive
-        if phrase.lower() in text_lower
-    )
-
-    negative_matches = sum(
-        1
-        for phrase in negative
-        if phrase.lower() in text_lower
-    )
-
-    positive_score = (
-        positive_matches /
-        max(len(positive), 1)
-    )
-
-    negative_score = (
-        negative_matches /
-        max(len(negative), 1)
-    )
-
-    return max(
-        positive_score -
-        (negative_score * 0.75),
-        0.0
-    )
 
 # ============================================================
 # PUNISHMENT SCORE
@@ -878,11 +541,6 @@ def calculate_legal_score(
         text
     )
 
-    distinction = distinction_score(
-        offence,
-        text
-    )
-
     punishment = punishment_score(
         query,
         text
@@ -893,48 +551,37 @@ def calculate_legal_score(
         metadata
     )
 
-    # --------------------------------------------------------
-    # BASE RETRIEVAL SCORE
-    # --------------------------------------------------------
-
+    # Existing dense / RRF score
     base_score = float(
         result.get(
             "score",
-            result.get(
-                "rrf_score",
-                0.0
-            )
+            0.0
         )
     )
 
     # --------------------------------------------------------
-    # LEGAL BOOST
+    # IMPORTANT:
+    # DO NOT LET LEGAL HEURISTICS OVERRIDE
+    # STRONG RETRIEVAL COMPLETELY.
     # --------------------------------------------------------
 
     legal_boost = (
 
-        section * 0.60
+        section * 0.35
 
         +
 
-        distinction * 0.25
+        concept * 0.20
 
         +
 
-        concept * 0.15
+        lexical * 0.10
 
         +
 
-        lexical * 0.05
+        punishment * 0.10
 
-        +
-
-        punishment * 0.05
     )
-
-    # --------------------------------------------------------
-    # FINAL SCORE
-    # --------------------------------------------------------
 
     final_score = (
         base_score
@@ -943,6 +590,7 @@ def calculate_legal_score(
     )
 
     return final_score
+
 
 # ============================================================
 # RECIPROCAL RANK FUSION
@@ -1096,23 +744,17 @@ def rerank_results(
         "\nLegalRAG reranking..."
     )
 
-    offence = detect_offence(
-        query
-    )
-
-    print(
-        f"Detected offence: {offence}"
-    )
-
     reranked = []
 
     for result in results:
 
         item = result.copy()
 
-        legal_score = calculate_legal_score(
-            query,
-            item
+        legal_score = (
+            calculate_legal_score(
+                query,
+                item
+            )
         )
 
         item[
@@ -1135,33 +777,29 @@ def rerank_results(
 
     # --------------------------------------------------------
     # SECTION DIVERSITY
+    #
+    # Avoid returning multiple chunks
+    # from exactly the same section.
     # --------------------------------------------------------
 
     final = []
 
     seen_sections = set()
 
-    # First pass:
-    # Prefer unique sections.
-
     for result in reranked:
 
-        metadata = result.get(
-            "metadata",
-            {}
-        )
-
         section = str(
-            metadata.get(
+            result.get(
+                "metadata",
+                {}
+            ).get(
                 "section",
                 ""
             )
         ).strip()
 
-        if not section:
-            section = "UNKNOWN"
-
         if section in seen_sections:
+
             continue
 
         seen_sections.add(
@@ -1173,32 +811,8 @@ def rerank_results(
         )
 
         if len(final) >= top_k:
+
             break
-
-    # --------------------------------------------------------
-    # FALLBACK
-    # --------------------------------------------------------
-    # If diversity filtering produced fewer than top_k,
-    # fill remaining positions.
-
-    if len(final) < top_k:
-
-        selected_ids = {
-            id(result)
-            for result in final
-        }
-
-        for result in reranked:
-
-            if id(result) in selected_ids:
-                continue
-
-            final.append(
-                result
-            )
-
-            if len(final) >= top_k:
-                break
 
     # --------------------------------------------------------
     # DEBUG
@@ -1219,8 +833,8 @@ def rerank_results(
         )
 
         print(
-            f"{i:02d}. "
-            f"Section {metadata.get('section', '?')} "
+            f"{i:02d}. Section "
+            f"{metadata.get('section', '?')} "
             f"score={result['legal_score']:.6f}"
         )
 

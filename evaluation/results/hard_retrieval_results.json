@@ -1,0 +1,116 @@
+[
+    {
+        "id": 15,
+        "query": "A person intentionally causes the death of another person. Which legal provision applies?",
+        "expected_section": "103",
+        "dense": {
+            "sections": [
+                "100",
+                "109",
+                "26",
+                "102",
+                "101"
+            ],
+            "recall_at_1": false,
+            "recall_at_3": false,
+            "recall_at_5": false,
+            "reciprocal_rank": 0.025
+        },
+        "bm25": {
+            "sections": [
+                "251",
+                "172",
+                "63",
+                "3",
+                "100"
+            ],
+            "recall_at_1": false,
+            "recall_at_3": false,
+            "recall_at_5": false,
+            "reciprocal_rank": 0.0
+        },
+        "rrf": {
+            "sections": [
+                "100",
+                "101",
+                "55",
+                "106",
+                "102"
+            ],
+            "recall_at_1": false,
+            "recall_at_3": false,
+            "recall_at_5": false,
+            "reciprocal_rank": 0.014705882352941176
+        },
+        "legal_reranker": {
+            "sections": [
+                "103",
+                "105",
+                "101",
+                "55",
+                "100"
+            ],
+            "recall_at_1": true,
+            "recall_at_3": true,
+            "recall_at_5": true,
+            "reciprocal_rank": 1.0
+        }
+    },
+    {
+        "id": 16,
+        "query": "An individual causes another person's death with the intention of causing death. Identify the applicable provision.",
+        "expected_section": "103",
+        "dense": {
+            "sections": [
+                "100",
+                "102",
+                "109",
+                "26",
+                "110"
+            ],
+            "recall_at_1": false,
+            "recall_at_3": false,
+            "recall_at_5": false,
+            "reciprocal_rank": 0.02857142857142857
+        },
+        "bm25": {
+            "sections": [
+                "100",
+                "101",
+                "3",
+                "109",
+                "63"
+            ],
+            "recall_at_1": false,
+            "recall_at_3": false,
+            "recall_at_5": false,
+            "reciprocal_rank": 0.02631578947368421
+        },
+        "rrf": {
+            "sections": [
+                "100",
+                "109",
+                "101",
+                "53",
+                "324"
+            ],
+            "recall_at_1": false,
+            "recall_at_3": false,
+            "recall_at_5": false,
+            "reciprocal_rank": 0.041666666666666664
+        },
+        "legal_reranker": {
+            "sections": [
+                "105",
+                "100",
+                "101",
+                "106",
+                "109"
+            ],
+            "recall_at_1": false,
+            "recall_at_3": false,
+            "recall_at_5": false,
+            "reciprocal_rank": 0.03125
+        }
+    }
+]

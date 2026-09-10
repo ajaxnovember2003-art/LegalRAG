@@ -1,0 +1,2990 @@
+{
+    "dense_only": {
+        "description": "Dense retrieval only",
+        "queries": [
+            {
+                "id": 1,
+                "query": "What is the punishment for theft?",
+                "expected_section": "303",
+                "sections": [
+                    "303",
+                    "304",
+                    "306",
+                    "307",
+                    "305"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 2,
+                "query": "What constitutes theft?",
+                "expected_section": "303",
+                "sections": [
+                    "303",
+                    "304",
+                    "307",
+                    "306",
+                    "314"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 3,
+                "query": "What is the punishment for snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "140",
+                    "134",
+                    "262",
+                    "305"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 4,
+                "query": "What is snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "303",
+                    "309",
+                    "138",
+                    "142"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 5,
+                "query": "What is the punishment for extortion?",
+                "expected_section": "308",
+                "sections": [
+                    "308",
+                    "309",
+                    "307",
+                    "318",
+                    "317"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 6,
+                "query": "What is robbery?",
+                "expected_section": "309",
+                "sections": [
+                    "309",
+                    "254",
+                    "311",
+                    "313",
+                    "312"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 7,
+                "query": "What is dacoity?",
+                "expected_section": "310",
+                "sections": [
+                    "310",
+                    "254",
+                    "58",
+                    "311",
+                    "231"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 8,
+                "query": "What is dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "315",
+                    "316",
+                    "318",
+                    "320"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 9,
+                "query": "What is the punishment for dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "323",
+                    "315",
+                    "347",
+                    "320"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 10,
+                "query": "What is criminal breach of trust?",
+                "expected_section": "316",
+                "sections": [
+                    "316",
+                    "315",
+                    "317",
+                    "303",
+                    "314"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 11,
+                "query": "What is stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "303",
+                    "316",
+                    "320",
+                    "323"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 12,
+                "query": "What is the punishment for receiving stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "304",
+                    "305",
+                    "316",
+                    "306"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 13,
+                "query": "What is cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "318",
+                    "336",
+                    "322",
+                    "317",
+                    "308"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 14,
+                "query": "What is the punishment for cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "318",
+                    "336",
+                    "322",
+                    "317",
+                    "323"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 15,
+                "query": "What is murder?",
+                "expected_section": "103",
+                "sections": [
+                    "103",
+                    "105",
+                    "110",
+                    "109",
+                    "101"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 16,
+                "query": "What is the punishment for murder?",
+                "expected_section": "103",
+                "sections": [
+                    "103",
+                    "105",
+                    "110",
+                    "109",
+                    "238"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 17,
+                "query": "What is culpable homicide?",
+                "expected_section": "105",
+                "sections": [
+                    "105",
+                    "100",
+                    "110",
+                    "101",
+                    "102"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 18,
+                "query": "What is attempt to murder?",
+                "expected_section": "109",
+                "sections": [
+                    "109",
+                    "101",
+                    "110",
+                    "105",
+                    "42"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 19,
+                "query": "What is criminal intimidation?",
+                "expected_section": null,
+                "sections": [
+                    "351",
+                    "346",
+                    "225",
+                    "350",
+                    "232"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            },
+            {
+                "id": 20,
+                "query": "What is wrongful confinement?",
+                "expected_section": null,
+                "sections": [
+                    "127",
+                    "125",
+                    "308",
+                    "259",
+                    "157"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            }
+        ],
+        "overall": {
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr": 1.0,
+            "evaluated_queries": 18
+        }
+    },
+    "rrf_baseline": {
+        "description": "Dense + BM25 + RRF",
+        "queries": [
+            {
+                "id": 1,
+                "query": "What is the punishment for theft?",
+                "expected_section": "303",
+                "sections": [
+                    "303",
+                    "307",
+                    "304",
+                    "314",
+                    "46"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 2,
+                "query": "What constitutes theft?",
+                "expected_section": "303",
+                "sections": [
+                    "303",
+                    "307",
+                    "304",
+                    "112",
+                    "306"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 3,
+                "query": "What is the punishment for snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "140",
+                    "112",
+                    "134",
+                    "22"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 4,
+                "query": "What is snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "303",
+                    "22",
+                    "309",
+                    "112"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 5,
+                "query": "What is the punishment for extortion?",
+                "expected_section": "308",
+                "sections": [
+                    "308",
+                    "307",
+                    "309",
+                    "318",
+                    "22"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 6,
+                "query": "What is robbery?",
+                "expected_section": "309",
+                "sections": [
+                    "309",
+                    "254",
+                    "312",
+                    "311",
+                    "56"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 7,
+                "query": "What is dacoity?",
+                "expected_section": "310",
+                "sections": [
+                    "310",
+                    "254",
+                    "312",
+                    "58",
+                    "231"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 8,
+                "query": "What is dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "322",
+                    "316",
+                    "317",
+                    "315"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 9,
+                "query": "What is the punishment for dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "323",
+                    "322",
+                    "315",
+                    "328"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 10,
+                "query": "What is criminal breach of trust?",
+                "expected_section": "316",
+                "sections": [
+                    "316",
+                    "315",
+                    "317",
+                    "303",
+                    "111"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 11,
+                "query": "What is stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "303",
+                    "252",
+                    "316",
+                    "314"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 12,
+                "query": "What is the punishment for receiving stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "316",
+                    "304",
+                    "252",
+                    "305"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 13,
+                "query": "What is cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "322",
+                    "317",
+                    "336",
+                    "112",
+                    "318"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.2
+            },
+            {
+                "id": 14,
+                "query": "What is the punishment for cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "322",
+                    "317",
+                    "318",
+                    "22",
+                    "336"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.3333333333333333
+            },
+            {
+                "id": 15,
+                "query": "What is murder?",
+                "expected_section": "103",
+                "sections": [
+                    "101",
+                    "109",
+                    "103",
+                    "17",
+                    "105"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.3333333333333333
+            },
+            {
+                "id": 16,
+                "query": "What is the punishment for murder?",
+                "expected_section": "103",
+                "sections": [
+                    "109",
+                    "55",
+                    "53",
+                    "101",
+                    "103"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.2
+            },
+            {
+                "id": 17,
+                "query": "What is culpable homicide?",
+                "expected_section": "105",
+                "sections": [
+                    "100",
+                    "102",
+                    "110",
+                    "105",
+                    "101"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.25
+            },
+            {
+                "id": 18,
+                "query": "What is attempt to murder?",
+                "expected_section": "109",
+                "sections": [
+                    "109",
+                    "101",
+                    "46",
+                    "17",
+                    "110"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 19,
+                "query": "What is criminal intimidation?",
+                "expected_section": null,
+                "sections": [
+                    "351",
+                    "350",
+                    "87",
+                    "346",
+                    "225"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            },
+            {
+                "id": 20,
+                "query": "What is wrongful confinement?",
+                "expected_section": null,
+                "sections": [
+                    "127",
+                    "125",
+                    "258",
+                    "259",
+                    "260"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            }
+        ],
+        "overall": {
+            "recall_at_1": 0.7222222222222222,
+            "recall_at_3": 0.8333333333333334,
+            "recall_at_5": 1.0,
+            "mrr": 0.7953703703703704,
+            "evaluated_queries": 18
+        }
+    },
+    "rrf_plus_lexical": {
+        "description": "RRF + lexical similarity",
+        "queries": [
+            {
+                "id": 1,
+                "query": "What is the punishment for theft?",
+                "expected_section": "303",
+                "sections": [
+                    "314",
+                    "46",
+                    "303",
+                    "307",
+                    "51"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.3333333333333333
+            },
+            {
+                "id": 2,
+                "query": "What constitutes theft?",
+                "expected_section": "303",
+                "sections": [
+                    "303",
+                    "307",
+                    "314",
+                    "304",
+                    "112"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 3,
+                "query": "What is the punishment for snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "46",
+                    "112",
+                    "262",
+                    "187"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 4,
+                "query": "What is snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "303",
+                    "22",
+                    "112",
+                    "23"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 5,
+                "query": "What is the punishment for extortion?",
+                "expected_section": "308",
+                "sections": [
+                    "307",
+                    "308",
+                    "309",
+                    "46",
+                    "314"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.5
+            },
+            {
+                "id": 6,
+                "query": "What is robbery?",
+                "expected_section": "309",
+                "sections": [
+                    "309",
+                    "254",
+                    "312",
+                    "56",
+                    "22"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 7,
+                "query": "What is dacoity?",
+                "expected_section": "310",
+                "sections": [
+                    "310",
+                    "254",
+                    "312",
+                    "58",
+                    "231"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 8,
+                "query": "What is dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "316",
+                    "303",
+                    "322",
+                    "317"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 9,
+                "query": "What is the punishment for dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "46",
+                    "316",
+                    "303",
+                    "322"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 10,
+                "query": "What is criminal breach of trust?",
+                "expected_section": "316",
+                "sections": [
+                    "303",
+                    "316",
+                    "317",
+                    "111",
+                    "315"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.5
+            },
+            {
+                "id": 11,
+                "query": "What is stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "303",
+                    "317",
+                    "316",
+                    "314",
+                    "120"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.5
+            },
+            {
+                "id": 12,
+                "query": "What is the punishment for receiving stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "316",
+                    "317",
+                    "303",
+                    "314",
+                    "46"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.5
+            },
+            {
+                "id": 13,
+                "query": "What is cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "322",
+                    "317",
+                    "336",
+                    "112",
+                    "318"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.2
+            },
+            {
+                "id": 14,
+                "query": "What is the punishment for cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "322",
+                    "46",
+                    "317",
+                    "318",
+                    "336"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.25
+            },
+            {
+                "id": 15,
+                "query": "What is murder?",
+                "expected_section": "103",
+                "sections": [
+                    "17",
+                    "46",
+                    "101",
+                    "109",
+                    "105"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": false,
+                "reciprocal_rank": 0.0
+            },
+            {
+                "id": 16,
+                "query": "What is the punishment for murder?",
+                "expected_section": "103",
+                "sections": [
+                    "46",
+                    "109",
+                    "55",
+                    "53",
+                    "49"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": false,
+                "reciprocal_rank": 0.0
+            },
+            {
+                "id": 17,
+                "query": "What is culpable homicide?",
+                "expected_section": "105",
+                "sections": [
+                    "100",
+                    "102",
+                    "110",
+                    "105",
+                    "101"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.25
+            },
+            {
+                "id": 18,
+                "query": "What is attempt to murder?",
+                "expected_section": "109",
+                "sections": [
+                    "109",
+                    "46",
+                    "17",
+                    "44",
+                    "3"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 19,
+                "query": "What is criminal intimidation?",
+                "expected_section": null,
+                "sections": [
+                    "351",
+                    "87",
+                    "189",
+                    "350",
+                    "22"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            },
+            {
+                "id": 20,
+                "query": "What is wrongful confinement?",
+                "expected_section": null,
+                "sections": [
+                    "127",
+                    "125",
+                    "308",
+                    "258",
+                    "260"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            }
+        ],
+        "overall": {
+            "recall_at_1": 0.4444444444444444,
+            "recall_at_3": 0.7222222222222222,
+            "recall_at_5": 0.8888888888888888,
+            "mrr": 0.6129629629629629,
+            "evaluated_queries": 18
+        }
+    },
+    "rrf_plus_concept": {
+        "description": "RRF + legal concept score",
+        "queries": [
+            {
+                "id": 1,
+                "query": "What is the punishment for theft?",
+                "expected_section": "303",
+                "sections": [
+                    "303",
+                    "304",
+                    "314",
+                    "307",
+                    "46"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 2,
+                "query": "What constitutes theft?",
+                "expected_section": "303",
+                "sections": [
+                    "303",
+                    "304",
+                    "314",
+                    "307",
+                    "306"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 3,
+                "query": "What is the punishment for snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "140",
+                    "112",
+                    "134",
+                    "22"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 4,
+                "query": "What is snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "303",
+                    "22",
+                    "309",
+                    "112"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 5,
+                "query": "What is the punishment for extortion?",
+                "expected_section": "308",
+                "sections": [
+                    "308",
+                    "307",
+                    "309",
+                    "318",
+                    "317"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 6,
+                "query": "What is robbery?",
+                "expected_section": "309",
+                "sections": [
+                    "309",
+                    "111",
+                    "308",
+                    "317",
+                    "313"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 7,
+                "query": "What is dacoity?",
+                "expected_section": "310",
+                "sections": [
+                    "310",
+                    "254",
+                    "312",
+                    "311",
+                    "308"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 8,
+                "query": "What is dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "322",
+                    "316",
+                    "317",
+                    "315"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 9,
+                "query": "What is the punishment for dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "323",
+                    "322",
+                    "315",
+                    "328"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 10,
+                "query": "What is criminal breach of trust?",
+                "expected_section": "316",
+                "sections": [
+                    "316",
+                    "315",
+                    "303",
+                    "317",
+                    "111"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 11,
+                "query": "What is stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "303",
+                    "252",
+                    "316",
+                    "120"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 12,
+                "query": "What is the punishment for receiving stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "316",
+                    "320",
+                    "314",
+                    "155"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 13,
+                "query": "What is cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "318",
+                    "322",
+                    "317",
+                    "336",
+                    "112"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 14,
+                "query": "What is the punishment for cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "318",
+                    "322",
+                    "317",
+                    "336",
+                    "112"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 15,
+                "query": "What is murder?",
+                "expected_section": "103",
+                "sections": [
+                    "105",
+                    "101",
+                    "109",
+                    "46",
+                    "110"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": false,
+                "reciprocal_rank": 0.0
+            },
+            {
+                "id": 16,
+                "query": "What is the punishment for murder?",
+                "expected_section": "103",
+                "sections": [
+                    "105",
+                    "109",
+                    "101",
+                    "46",
+                    "110"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": false,
+                "reciprocal_rank": 0.0
+            },
+            {
+                "id": 17,
+                "query": "What is culpable homicide?",
+                "expected_section": "105",
+                "sections": [
+                    "100",
+                    "101",
+                    "110",
+                    "105",
+                    "106"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.25
+            },
+            {
+                "id": 18,
+                "query": "What is attempt to murder?",
+                "expected_section": "109",
+                "sections": [
+                    "109",
+                    "44",
+                    "101",
+                    "3",
+                    "42"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 19,
+                "query": "What is criminal intimidation?",
+                "expected_section": null,
+                "sections": [
+                    "351",
+                    "232",
+                    "308",
+                    "346",
+                    "225"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            },
+            {
+                "id": 20,
+                "query": "What is wrongful confinement?",
+                "expected_section": null,
+                "sections": [
+                    "127",
+                    "125",
+                    "308",
+                    "258",
+                    "259"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            }
+        ],
+        "overall": {
+            "recall_at_1": 0.8333333333333334,
+            "recall_at_3": 0.8333333333333334,
+            "recall_at_5": 0.8888888888888888,
+            "mrr": 0.8472222222222222,
+            "evaluated_queries": 18
+        }
+    },
+    "rrf_plus_punishment": {
+        "description": "RRF + punishment intent score",
+        "queries": [
+            {
+                "id": 1,
+                "query": "What is the punishment for theft?",
+                "expected_section": "303",
+                "sections": [
+                    "303",
+                    "307",
+                    "304",
+                    "314",
+                    "306"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 2,
+                "query": "What constitutes theft?",
+                "expected_section": "303",
+                "sections": [
+                    "303",
+                    "307",
+                    "304",
+                    "112",
+                    "306"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 3,
+                "query": "What is the punishment for snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "140",
+                    "112",
+                    "134",
+                    "262"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 4,
+                "query": "What is snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "303",
+                    "22",
+                    "309",
+                    "112"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 5,
+                "query": "What is the punishment for extortion?",
+                "expected_section": "308",
+                "sections": [
+                    "308",
+                    "307",
+                    "309",
+                    "318",
+                    "317"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 6,
+                "query": "What is robbery?",
+                "expected_section": "309",
+                "sections": [
+                    "309",
+                    "254",
+                    "312",
+                    "311",
+                    "56"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 7,
+                "query": "What is dacoity?",
+                "expected_section": "310",
+                "sections": [
+                    "310",
+                    "254",
+                    "312",
+                    "58",
+                    "231"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 8,
+                "query": "What is dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "322",
+                    "316",
+                    "317",
+                    "315"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 9,
+                "query": "What is the punishment for dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "323",
+                    "322",
+                    "315",
+                    "328"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 10,
+                "query": "What is criminal breach of trust?",
+                "expected_section": "316",
+                "sections": [
+                    "316",
+                    "315",
+                    "317",
+                    "303",
+                    "111"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 11,
+                "query": "What is stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "303",
+                    "252",
+                    "316",
+                    "314"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 12,
+                "query": "What is the punishment for receiving stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "316",
+                    "304",
+                    "252",
+                    "305"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 13,
+                "query": "What is cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "322",
+                    "317",
+                    "336",
+                    "112",
+                    "318"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.2
+            },
+            {
+                "id": 14,
+                "query": "What is the punishment for cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "322",
+                    "317",
+                    "318",
+                    "336",
+                    "112"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.3333333333333333
+            },
+            {
+                "id": 15,
+                "query": "What is murder?",
+                "expected_section": "103",
+                "sections": [
+                    "101",
+                    "109",
+                    "103",
+                    "17",
+                    "105"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.3333333333333333
+            },
+            {
+                "id": 16,
+                "query": "What is the punishment for murder?",
+                "expected_section": "103",
+                "sections": [
+                    "109",
+                    "55",
+                    "103",
+                    "105",
+                    "110"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.3333333333333333
+            },
+            {
+                "id": 17,
+                "query": "What is culpable homicide?",
+                "expected_section": "105",
+                "sections": [
+                    "100",
+                    "102",
+                    "110",
+                    "105",
+                    "101"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.25
+            },
+            {
+                "id": 18,
+                "query": "What is attempt to murder?",
+                "expected_section": "109",
+                "sections": [
+                    "109",
+                    "101",
+                    "46",
+                    "17",
+                    "110"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 19,
+                "query": "What is criminal intimidation?",
+                "expected_section": null,
+                "sections": [
+                    "351",
+                    "350",
+                    "87",
+                    "346",
+                    "225"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            },
+            {
+                "id": 20,
+                "query": "What is wrongful confinement?",
+                "expected_section": null,
+                "sections": [
+                    "127",
+                    "125",
+                    "258",
+                    "259",
+                    "260"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            }
+        ],
+        "overall": {
+            "recall_at_1": 0.7222222222222222,
+            "recall_at_3": 0.8888888888888888,
+            "recall_at_5": 1.0,
+            "mrr": 0.8027777777777777,
+            "evaluated_queries": 18
+        }
+    },
+    "rrf_plus_section": {
+        "description": "RRF + section matching",
+        "queries": [
+            {
+                "id": 1,
+                "query": "What is the punishment for theft?",
+                "expected_section": "303",
+                "sections": [
+                    "303",
+                    "307",
+                    "304",
+                    "314",
+                    "46"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 2,
+                "query": "What constitutes theft?",
+                "expected_section": "303",
+                "sections": [
+                    "303",
+                    "307",
+                    "304",
+                    "112",
+                    "306"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 3,
+                "query": "What is the punishment for snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "140",
+                    "112",
+                    "134",
+                    "22"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 4,
+                "query": "What is snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "303",
+                    "22",
+                    "309",
+                    "112"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 5,
+                "query": "What is the punishment for extortion?",
+                "expected_section": "308",
+                "sections": [
+                    "308",
+                    "307",
+                    "309",
+                    "318",
+                    "22"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 6,
+                "query": "What is robbery?",
+                "expected_section": "309",
+                "sections": [
+                    "309",
+                    "254",
+                    "312",
+                    "311",
+                    "56"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 7,
+                "query": "What is dacoity?",
+                "expected_section": "310",
+                "sections": [
+                    "310",
+                    "254",
+                    "312",
+                    "58",
+                    "231"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 8,
+                "query": "What is dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "322",
+                    "316",
+                    "317",
+                    "315"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 9,
+                "query": "What is the punishment for dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "323",
+                    "322",
+                    "315",
+                    "328"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 10,
+                "query": "What is criminal breach of trust?",
+                "expected_section": "316",
+                "sections": [
+                    "316",
+                    "315",
+                    "317",
+                    "303",
+                    "111"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 11,
+                "query": "What is stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "303",
+                    "252",
+                    "316",
+                    "314"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 12,
+                "query": "What is the punishment for receiving stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "316",
+                    "304",
+                    "252",
+                    "305"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 13,
+                "query": "What is cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "318",
+                    "322",
+                    "317",
+                    "336",
+                    "112"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 14,
+                "query": "What is the punishment for cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "318",
+                    "322",
+                    "317",
+                    "22",
+                    "336"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 15,
+                "query": "What is murder?",
+                "expected_section": "103",
+                "sections": [
+                    "103",
+                    "101",
+                    "109",
+                    "17",
+                    "105"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 16,
+                "query": "What is the punishment for murder?",
+                "expected_section": "103",
+                "sections": [
+                    "103",
+                    "109",
+                    "55",
+                    "53",
+                    "101"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 17,
+                "query": "What is culpable homicide?",
+                "expected_section": "105",
+                "sections": [
+                    "105",
+                    "100",
+                    "102",
+                    "110",
+                    "101"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 18,
+                "query": "What is attempt to murder?",
+                "expected_section": "109",
+                "sections": [
+                    "109",
+                    "101",
+                    "46",
+                    "17",
+                    "110"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 19,
+                "query": "What is criminal intimidation?",
+                "expected_section": null,
+                "sections": [
+                    "351",
+                    "350",
+                    "87",
+                    "346",
+                    "225"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            },
+            {
+                "id": 20,
+                "query": "What is wrongful confinement?",
+                "expected_section": null,
+                "sections": [
+                    "127",
+                    "125",
+                    "258",
+                    "259",
+                    "260"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            }
+        ],
+        "overall": {
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr": 1.0,
+            "evaluated_queries": 18
+        }
+    },
+    "rrf_lexical_concept": {
+        "description": "RRF + lexical + concept",
+        "queries": [
+            {
+                "id": 1,
+                "query": "What is the punishment for theft?",
+                "expected_section": "303",
+                "sections": [
+                    "314",
+                    "303",
+                    "304",
+                    "46",
+                    "307"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.5
+            },
+            {
+                "id": 2,
+                "query": "What constitutes theft?",
+                "expected_section": "303",
+                "sections": [
+                    "303",
+                    "314",
+                    "304",
+                    "307",
+                    "306"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 3,
+                "query": "What is the punishment for snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "46",
+                    "112",
+                    "262",
+                    "187"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 4,
+                "query": "What is snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "303",
+                    "22",
+                    "112",
+                    "23"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 5,
+                "query": "What is the punishment for extortion?",
+                "expected_section": "308",
+                "sections": [
+                    "308",
+                    "307",
+                    "309",
+                    "317",
+                    "111"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 6,
+                "query": "What is robbery?",
+                "expected_section": "309",
+                "sections": [
+                    "309",
+                    "111",
+                    "308",
+                    "317",
+                    "35"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 7,
+                "query": "What is dacoity?",
+                "expected_section": "310",
+                "sections": [
+                    "310",
+                    "254",
+                    "312",
+                    "308",
+                    "317"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 8,
+                "query": "What is dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "316",
+                    "303",
+                    "322",
+                    "317"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 9,
+                "query": "What is the punishment for dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "46",
+                    "316",
+                    "303",
+                    "322"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 10,
+                "query": "What is criminal breach of trust?",
+                "expected_section": "316",
+                "sections": [
+                    "316",
+                    "303",
+                    "315",
+                    "317",
+                    "111"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 11,
+                "query": "What is stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "303",
+                    "316",
+                    "120",
+                    "252"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 12,
+                "query": "What is the punishment for receiving stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "316",
+                    "314",
+                    "46",
+                    "255"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 13,
+                "query": "What is cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "318",
+                    "322",
+                    "317",
+                    "336",
+                    "112"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 14,
+                "query": "What is the punishment for cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "318",
+                    "322",
+                    "317",
+                    "336",
+                    "112"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 15,
+                "query": "What is murder?",
+                "expected_section": "103",
+                "sections": [
+                    "105",
+                    "46",
+                    "101",
+                    "109",
+                    "110"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": false,
+                "reciprocal_rank": 0.0
+            },
+            {
+                "id": 16,
+                "query": "What is the punishment for murder?",
+                "expected_section": "103",
+                "sections": [
+                    "105",
+                    "46",
+                    "109",
+                    "101",
+                    "110"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": false,
+                "reciprocal_rank": 0.0
+            },
+            {
+                "id": 17,
+                "query": "What is culpable homicide?",
+                "expected_section": "105",
+                "sections": [
+                    "100",
+                    "101",
+                    "110",
+                    "105",
+                    "106"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.25
+            },
+            {
+                "id": 18,
+                "query": "What is attempt to murder?",
+                "expected_section": "109",
+                "sections": [
+                    "109",
+                    "44",
+                    "3",
+                    "310",
+                    "307"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 19,
+                "query": "What is criminal intimidation?",
+                "expected_section": null,
+                "sections": [
+                    "351",
+                    "232",
+                    "308",
+                    "87",
+                    "189"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            },
+            {
+                "id": 20,
+                "query": "What is wrongful confinement?",
+                "expected_section": null,
+                "sections": [
+                    "127",
+                    "125",
+                    "308",
+                    "258",
+                    "260"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            }
+        ],
+        "overall": {
+            "recall_at_1": 0.7777777777777778,
+            "recall_at_3": 0.8333333333333334,
+            "recall_at_5": 0.8888888888888888,
+            "mrr": 0.8194444444444444,
+            "evaluated_queries": 18
+        }
+    },
+    "rrf_lexical_concept_punishment": {
+        "description": "RRF + lexical + concept + punishment",
+        "queries": [
+            {
+                "id": 1,
+                "query": "What is the punishment for theft?",
+                "expected_section": "303",
+                "sections": [
+                    "314",
+                    "303",
+                    "304",
+                    "307",
+                    "46"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.5
+            },
+            {
+                "id": 2,
+                "query": "What constitutes theft?",
+                "expected_section": "303",
+                "sections": [
+                    "303",
+                    "314",
+                    "304",
+                    "307",
+                    "306"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 3,
+                "query": "What is the punishment for snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "112",
+                    "262",
+                    "187",
+                    "46"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 4,
+                "query": "What is snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "303",
+                    "22",
+                    "112",
+                    "23"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 5,
+                "query": "What is the punishment for extortion?",
+                "expected_section": "308",
+                "sections": [
+                    "308",
+                    "307",
+                    "309",
+                    "317",
+                    "111"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 6,
+                "query": "What is robbery?",
+                "expected_section": "309",
+                "sections": [
+                    "309",
+                    "111",
+                    "308",
+                    "317",
+                    "35"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 7,
+                "query": "What is dacoity?",
+                "expected_section": "310",
+                "sections": [
+                    "310",
+                    "254",
+                    "312",
+                    "308",
+                    "317"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 8,
+                "query": "What is dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "316",
+                    "303",
+                    "322",
+                    "317"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 9,
+                "query": "What is the punishment for dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "316",
+                    "303",
+                    "322",
+                    "317"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 10,
+                "query": "What is criminal breach of trust?",
+                "expected_section": "316",
+                "sections": [
+                    "316",
+                    "303",
+                    "315",
+                    "317",
+                    "111"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 11,
+                "query": "What is stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "303",
+                    "316",
+                    "120",
+                    "252"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 12,
+                "query": "What is the punishment for receiving stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "316",
+                    "314",
+                    "255",
+                    "46"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 13,
+                "query": "What is cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "318",
+                    "322",
+                    "317",
+                    "336",
+                    "112"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 14,
+                "query": "What is the punishment for cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "318",
+                    "322",
+                    "317",
+                    "336",
+                    "112"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 15,
+                "query": "What is murder?",
+                "expected_section": "103",
+                "sections": [
+                    "105",
+                    "46",
+                    "101",
+                    "109",
+                    "110"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": false,
+                "reciprocal_rank": 0.0
+            },
+            {
+                "id": 16,
+                "query": "What is the punishment for murder?",
+                "expected_section": "103",
+                "sections": [
+                    "105",
+                    "109",
+                    "46",
+                    "110",
+                    "55"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": false,
+                "reciprocal_rank": 0.0
+            },
+            {
+                "id": 17,
+                "query": "What is culpable homicide?",
+                "expected_section": "105",
+                "sections": [
+                    "100",
+                    "101",
+                    "110",
+                    "105",
+                    "106"
+                ],
+                "recall_at_1": false,
+                "recall_at_3": false,
+                "recall_at_5": true,
+                "reciprocal_rank": 0.25
+            },
+            {
+                "id": 18,
+                "query": "What is attempt to murder?",
+                "expected_section": "109",
+                "sections": [
+                    "109",
+                    "44",
+                    "3",
+                    "310",
+                    "307"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 19,
+                "query": "What is criminal intimidation?",
+                "expected_section": null,
+                "sections": [
+                    "351",
+                    "232",
+                    "308",
+                    "87",
+                    "189"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            },
+            {
+                "id": 20,
+                "query": "What is wrongful confinement?",
+                "expected_section": null,
+                "sections": [
+                    "127",
+                    "125",
+                    "308",
+                    "258",
+                    "260"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            }
+        ],
+        "overall": {
+            "recall_at_1": 0.7777777777777778,
+            "recall_at_3": 0.8333333333333334,
+            "recall_at_5": 0.8888888888888888,
+            "mrr": 0.8194444444444444,
+            "evaluated_queries": 18
+        }
+    },
+    "full_legalrag": {
+        "description": "Full LegalRAG reranker",
+        "queries": [
+            {
+                "id": 1,
+                "query": "What is the punishment for theft?",
+                "expected_section": "303",
+                "sections": [
+                    "303",
+                    "314",
+                    "304",
+                    "307",
+                    "46"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 2,
+                "query": "What constitutes theft?",
+                "expected_section": "303",
+                "sections": [
+                    "303",
+                    "314",
+                    "304",
+                    "307",
+                    "306"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 3,
+                "query": "What is the punishment for snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "112",
+                    "262",
+                    "187",
+                    "46"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 4,
+                "query": "What is snatching?",
+                "expected_section": "304",
+                "sections": [
+                    "304",
+                    "303",
+                    "22",
+                    "112",
+                    "23"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 5,
+                "query": "What is the punishment for extortion?",
+                "expected_section": "308",
+                "sections": [
+                    "308",
+                    "307",
+                    "309",
+                    "317",
+                    "111"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 6,
+                "query": "What is robbery?",
+                "expected_section": "309",
+                "sections": [
+                    "309",
+                    "111",
+                    "308",
+                    "317",
+                    "35"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 7,
+                "query": "What is dacoity?",
+                "expected_section": "310",
+                "sections": [
+                    "310",
+                    "254",
+                    "312",
+                    "308",
+                    "317"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 8,
+                "query": "What is dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "316",
+                    "303",
+                    "322",
+                    "317"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 9,
+                "query": "What is the punishment for dishonest misappropriation of property?",
+                "expected_section": "314",
+                "sections": [
+                    "314",
+                    "316",
+                    "303",
+                    "322",
+                    "317"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 10,
+                "query": "What is criminal breach of trust?",
+                "expected_section": "316",
+                "sections": [
+                    "316",
+                    "303",
+                    "315",
+                    "317",
+                    "111"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 11,
+                "query": "What is stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "303",
+                    "316",
+                    "120",
+                    "252"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 12,
+                "query": "What is the punishment for receiving stolen property?",
+                "expected_section": "317",
+                "sections": [
+                    "317",
+                    "316",
+                    "314",
+                    "255",
+                    "46"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 13,
+                "query": "What is cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "318",
+                    "322",
+                    "317",
+                    "336",
+                    "112"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 14,
+                "query": "What is the punishment for cheating?",
+                "expected_section": "318",
+                "sections": [
+                    "318",
+                    "322",
+                    "317",
+                    "336",
+                    "112"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 15,
+                "query": "What is murder?",
+                "expected_section": "103",
+                "sections": [
+                    "103",
+                    "105",
+                    "46",
+                    "101",
+                    "109"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 16,
+                "query": "What is the punishment for murder?",
+                "expected_section": "103",
+                "sections": [
+                    "103",
+                    "105",
+                    "109",
+                    "46",
+                    "110"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 17,
+                "query": "What is culpable homicide?",
+                "expected_section": "105",
+                "sections": [
+                    "105",
+                    "100",
+                    "101",
+                    "110",
+                    "106"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 18,
+                "query": "What is attempt to murder?",
+                "expected_section": "109",
+                "sections": [
+                    "109",
+                    "44",
+                    "3",
+                    "310",
+                    "307"
+                ],
+                "recall_at_1": true,
+                "recall_at_3": true,
+                "recall_at_5": true,
+                "reciprocal_rank": 1.0
+            },
+            {
+                "id": 19,
+                "query": "What is criminal intimidation?",
+                "expected_section": null,
+                "sections": [
+                    "351",
+                    "232",
+                    "308",
+                    "87",
+                    "189"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            },
+            {
+                "id": 20,
+                "query": "What is wrongful confinement?",
+                "expected_section": null,
+                "sections": [
+                    "127",
+                    "125",
+                    "308",
+                    "258",
+                    "260"
+                ],
+                "recall_at_1": null,
+                "recall_at_3": null,
+                "recall_at_5": null,
+                "reciprocal_rank": null
+            }
+        ],
+        "overall": {
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr": 1.0,
+            "evaluated_queries": 18
+        }
+    }
+}
