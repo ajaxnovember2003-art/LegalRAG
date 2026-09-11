@@ -21,10 +21,10 @@
             "mrr": 0.02818627450980392
         },
         "legal_reranker": {
-            "recall_at_1": 0.5,
-            "recall_at_3": 0.5,
-            "recall_at_5": 0.5,
-            "mrr": 0.515625
+            "recall_at_1": 1.0,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "mrr": 1.0
         }
     }
 }

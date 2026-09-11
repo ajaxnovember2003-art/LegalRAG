@@ -491,81 +491,116 @@ LEGAL_DISTINCTIONS = {
 # ============================================================
 # QUERY OFFENCE DETECTION
 # ============================================================
-
 def detect_offence(query):
 
-    q = query.lower()
+    q = query.lower().strip()
 
-    # --------------------------------------------------------
-    # MOST SPECIFIC OFFENCES FIRST
-    # --------------------------------------------------------
+    # ========================================================
+    # 1. EXPLICIT OFFENCE NAMES — HIGHEST PRIORITY
+    # ========================================================
 
-    # Attempt to murder
-    if (
-        "attempt to murder" in q
-        or "attempts to cause death" in q
-        or "attempt to cause death" in q
-        or "attempting to cause death" in q
-        or "act towards causing death" in q
-        or "direct step towards causing death" in q
-        or (
-            (
-                "death does not occur" in q
-                or "victim survives" in q
-            )
-            and "death" in q
-        )
-    ):
+    # Attempt to murder must come first because it contains
+    # the word "murder".
+    if "attempt to murder" in q:
         return "attempt to murder"
 
-    # --------------------------------------------------------
-    # CULPABLE HOMICIDE
-    # --------------------------------------------------------
-
-    if (
-        "culpable homicide" in q
-        or (
-            "causes death" in q
-            and (
-                "knowledge" in q
-                or "likely to cause death" in q
-            )
-        )
-    ):
-        return "culpable homicide"
-
-    # --------------------------------------------------------
-    # MURDER
-    # --------------------------------------------------------
-
-    if (
-        "murder" in q
-        or "intentionally causes the death" in q
-        or "intentionally causes death" in q
-        or "intention to cause death" in q
-        or "intending to cause death" in q
-        or "intentional killing" in q
-    ):
+    # Explicit murder
+    if re.search(r"\bmurder\b", q):
         return "murder"
 
-    # --------------------------------------------------------
-    # OTHER OFFENCES
-    # --------------------------------------------------------
+    # Explicit culpable homicide
+    if "culpable homicide" in q:
+        return "culpable homicide"
 
-    offences = sorted(
+    # Other explicit offence names
+    explicit_offences = sorted(
         OFFENCE_SECTIONS.keys(),
         key=len,
         reverse=True
     )
 
-    for offence in offences:
-
+    for offence in explicit_offences:
         if offence in q:
             return offence
 
-    # --------------------------------------------------------
-    # CONCEPT-BASED DETECTION
-    # --------------------------------------------------------
+    # ========================================================
+    # 2. ATTEMPT-TO-MURDER CONCEPTS
+    # ========================================================
+
+    attempt_indicators = [
+        "death does not occur",
+        "victim survives",
+        "the victim survives",
+        "attempting to cause death",
+        "attempt to cause death",
+        "attempts to cause death",
+        "direct step towards causing death",
+        "direct step toward causing death",
+        "tries to kill",
+        "tried to kill",
+        "attempted killing",
+    ]
+
+    if any(
+        phrase in q
+        for phrase in attempt_indicators
+    ):
+        return "attempt to murder"
+
+    # ========================================================
+    # 3. MURDER CONCEPTS
+    # ========================================================
+
+    murder_indicators = [
+        "intention to cause death",
+        "intention of causing death",
+        "intending to cause death",
+        "intentionally causes death",
+        "intentionally causes the death",
+        "intentionally causing death",
+        "intentional killing",
+        "intends to kill",
+        "intended to kill",
+        "intention to kill",
+        "intention of killing",
+        "intent to cause death",
+        "intent of causing death",
+        "causes death with the intention",
+        "causes the death with the intention",
+        "caused death with the intention",
+        "caused the death with the intention",
+    ]
+
+    if any(
+        phrase in q
+        for phrase in murder_indicators
+    ):
+        return "murder"
+
+    # ========================================================
+    # 4. CULPABLE HOMICIDE CONCEPTS
+    # ========================================================
+
+    culpable_homicide_indicators = [
+        "knowledge likely to cause death",
+        "knowledge that the act is likely to cause death",
+        "knowing that the act is likely to cause death",
+        "act likely to cause death",
+        "without intention to cause death",
+        "without intending to cause death",
+        "without intent to cause death",
+        "without intention of causing death",
+    ]
+
+    if any(
+        phrase in q
+        for phrase in culpable_homicide_indicators
+    ):
+        return "culpable homicide"
+
+    # ========================================================
+    # 5. OTHER CONCEPT-BASED DETECTION
+    # ========================================================
 
     concept_matches = {}
 
@@ -581,11 +616,14 @@ def detect_offence(query):
             concept_matches[offence] = matches
 
     if concept_matches:
-
         return max(
             concept_matches,
             key=concept_matches.get
         )
+
+    # ========================================================
+    # 6. NO OFFENCE DETECTED
+    # ========================================================
 
     return None
 
