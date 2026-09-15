@@ -301,159 +301,122 @@ LEGAL_DISTINCTIONS = {
             "deception",
         ],
     },
-
+    
     "robbery": {
         "positive": [
-            "fear of instant hurt",
-            "instant hurt",
-            "instant death",
-            "violence",
-            "theft",
-            "extortion",
+          "fear of instant death",
+          "fear of instant hurt",
+          "fear of instant wrongful restraint",
+          "instant death",
+          "instant hurt",
+          "instant wrongful restraint",
+           "violence",
+           "takes property",
+          "taking property"
         ],
-        "negative": [
-            "five or more persons",
-            "entrusted with property",
-            "deception",
-        ],
+         "negative": [
+           "entrusted with property",
+        "dishonestly misappropriates",
+             "dishonestly converts",
+         "deception",
+           "cause alarm"
+         ]
     },
 
     "dacoity": {
         "positive": [
             "five or more persons",
-            "five or more",
-            "jointly commit robbery",
-            "robbery",
+            "five or more people",
+            "five or more persons conjointly",
+            "conjointly commit robbery",
+            "conjointly commit or attempt",
+            "persons present and aiding",
+            "amount to five or more",
+            "jointly commits robbery",
+            "jointly commit robbery"
         ],
         "negative": [
             "single person",
             "two persons",
-        ],
+            "three persons",
+            "four persons"
+        ]
     },
 
     "extortion": {
         "positive": [
+            "puts or attempts to put any person in fear",
+            "puts any person in fear",
             "fear of injury",
             "fear of harm",
+            "deliver any property",
             "delivery of property",
+            "delivery of money",
             "dishonestly induces",
-            "putting a person in fear",
+            "putting a person in fear"
         ],
         "negative": [
             "takes movable property",
-            "without consent",
+            "moves property",
             "entrusted with property",
-        ],
+            "dishonestly misappropriates",
+            "dishonestly converts",
+            "cause alarm"
+        ]
     },
 
     "criminal breach of trust": {
         "positive": [
-            "entrusted",
             "entrusted with property",
+            "entrusted with money",
             "entrusted with dominion",
             "dominion over property",
             "dishonestly misappropriates",
+            "dishonestly misappropriated",
             "dishonestly converts",
+            "dishonestly converted",
+            "converts to his own use",
+            "uses or disposes",
+            "in violation of any direction of law",
+            "in violation of any legal contract",
+            "discharge of such trust"
         ],
         "negative": [
-            "deception",
-            "induces a person to deliver property",
-            "fear of injury",
-        ],
-    },
-
-    "stolen property": {
-        "positive": [
-            "stolen property",
-            "dishonestly receives",
-            "retains stolen property",
-            "knowing it to be stolen",
-        ],
-        "negative": [
-            "entrusted with property",
             "deception",
             "fear of injury",
-        ],
-    },
-
-    "receiving stolen property": {
-        "positive": [
-            "dishonestly receives",
-            "dishonestly receiving",
-            "retains stolen property",
-            "knowing it to be stolen",
-        ],
-        "negative": [
-            "deception",
-            "entrusted with property",
-        ],
-    },
-
-    "cheating": {
-        "positive": [
-            "deception",
-            "deceives",
-            "dishonestly induces",
-            "dishonestly inducing",
-            "delivery of property",
-            "induces a person to deliver property",
-            "transfer property",
-        ],
-        "negative": [
-            "fear of injury",
-            "entrusted with property",
-            "stolen property",
-        ],
-    },
-
-    "wrongful restraint": {
-        "positive": [
-            "voluntarily obstructs",
-            "voluntarily obstruct",
-            "prevents a person from proceeding",
-            "cannot proceed",
-            "right to proceed",
-        ],
-        "negative": [
-            "prevents a person from leaving",
-            "confined within limits",
-            "restricted area",
-        ],
-    },
-
-    "wrongful confinement": {
-        "positive": [
-            "wrongfully confines",
-            "confined within limits",
-            "prevents a person from leaving",
-            "restricted area",
-            "moving beyond certain limits",
-        ],
-        "negative": [
-            "cannot proceed",
-            "right to proceed",
-            "voluntarily obstructs",
-        ],
+            "fear of harm",
+            "cause alarm",
+            "threatens another"
+        ]
     },
 
     "criminal intimidation": {
         "positive": [
-            "threatens",
-            "threat",
-            "injury",
-            "harm",
-            "reputation",
-            "property",
+            "threatens another with injury",
+            "threat of injury",
+            "threatens with injury",
+            "threatens with harm",
+            "intent to cause alarm",
+            "cause alarm to that person",
             "cause alarm",
-            "cause fear",
+            "threatens another",
+            "threatening another"
         ],
         "negative": [
-            "sexual remarks",
-            "sexual behaviour",
-            "sexual behavior",
-            "sexual intercourse",
-        ],
+            "fear of instant death",
+            "fear of instant hurt",
+            "fear of instant wrongful restraint",
+            "five or more persons",
+            "conjointly commit robbery",
+            "deliver any property",
+            "delivery of property",
+            "entrusted with property",
+            "dishonestly misappropriates",
+            "dishonestly converts"
+        ]
     },
+
+    
 
     "rape": {
         "positive": [
@@ -489,30 +452,390 @@ LEGAL_DISTINCTIONS = {
 }
 
 # ============================================================
+# STATUTORY ANCHORS
+# ============================================================
+# Highly distinctive phrases taken from the statutory language
+# of important BNS provisions.
+#
+# These are intentionally stronger signals than generic
+# legal concepts because they identify provision-specific
+# wording.
+# ============================================================
+
+STATUTORY_ANCHORS = {
+
+    # --------------------------------------------------------
+    # SECTION 103 — MURDER
+    # --------------------------------------------------------
+    "murder": [
+        "whoever commits murder shall be punished",
+        "punished with death or imprisonment for life",
+        "imprisonment for life",
+        "and shall also be liable to fine",
+    ],
+
+    # --------------------------------------------------------
+    # SECTION 105 — CULPABLE HOMICIDE
+    # --------------------------------------------------------
+    "culpable homicide": [
+        "culpable homicide not amounting to murder",
+        "intention of causing death",
+        "knowledge that he is likely by such act to cause death",
+        "knowledge that the act is likely to cause death",
+    ],
+
+    # --------------------------------------------------------
+    # SECTION 109 — ATTEMPT TO MURDER
+    # --------------------------------------------------------
+    "attempt to murder": [
+        "intention or knowledge",
+        "if by that act he caused death",
+        "would be guilty of murder",
+        "does any act with such intention or knowledge",
+    ],
+
+    # --------------------------------------------------------
+    # SECTION 310 — DACOITY
+    # --------------------------------------------------------
+    "dacoity": [
+        "five or more persons conjointly",
+        "conjointly commit or attempt",
+        "persons present and aiding",
+        "amount to five or more",
+        "five or more persons",
+    ],
+
+    # --------------------------------------------------------
+    # SECTION 308 — EXTORTION
+    # --------------------------------------------------------
+    "extortion": [
+        "puts or attempts to put any person in fear",
+        "fear of injury",
+        "deliver to any person any property",
+        "deliver any property",
+        "valuable security",
+    ],
+
+    # --------------------------------------------------------
+    # SECTION 316 — CRIMINAL BREACH OF TRUST
+    # --------------------------------------------------------
+    "criminal breach of trust": [
+        "entrusted with property",
+        "entrusted with money",
+        "dominion over property",
+        "dishonestly misappropriates",
+        "dishonestly converts",
+        "converts to his own use",
+        "uses or disposes",
+        "in violation of any direction of law",
+        "in violation of any legal contract",
+        "discharge of such trust",
+    ],
+
+    # --------------------------------------------------------
+    # SECTION 317 — STOLEN PROPERTY
+    # --------------------------------------------------------
+    "stolen property": [
+        "knowing or having reason to believe",
+        "reason to believe it to be stolen",
+        "property to be stolen",
+        "receives or retains such property",
+        "dishonestly receives",
+        "dishonestly received",
+    ],
+
+    # --------------------------------------------------------
+    # SECTION 318 — CHEATING
+    # --------------------------------------------------------
+    "cheating": [
+        "deceiving any person",
+        "fraudulently or dishonestly induces",
+        "induces the person so deceived",
+        "deliver any property",
+        "retain any property",
+    ],
+
+    # --------------------------------------------------------
+    # SECTION 303 — THEFT
+    # --------------------------------------------------------
+    "theft": [
+        "dishonestly takes any movable property",
+        "movable property",
+        "out of the possession of any person",
+        "without that person's consent",
+        "moves that property",
+    ],
+
+    # --------------------------------------------------------
+    # SECTION 309 — ROBBERY
+    # --------------------------------------------------------
+    "robbery": [
+        "robbery or dacoity",
+        "instant death",
+        "instant hurt",
+        "instant wrongful restraint",
+        "fear of instant death",
+        "fear of instant hurt",
+        "fear of instant wrongful restraint",
+    ],
+
+    # --------------------------------------------------------
+    # SECTION 126 — WRONGFUL RESTRAINT
+    # --------------------------------------------------------
+    "wrongful restraint": [
+        "voluntarily obstructs a person",
+        "from proceeding in any direction",
+        "right to proceed",
+        "prevented from proceeding",
+    ],
+
+    # --------------------------------------------------------
+    # SECTION 127 — WRONGFUL CONFINEMENT
+    # --------------------------------------------------------
+    "wrongful confinement": [
+        "wrongfully to confine",
+        "circumscribing limits",
+        "circumscribed limits",
+        "proceeding beyond certain circumscribing limits",
+        "prevented from proceeding beyond certain limits",
+    ],
+
+    # --------------------------------------------------------
+    # SECTION 351 — CRIMINAL INTIMIDATION
+    # --------------------------------------------------------
+    "criminal intimidation": [
+        "threatens another with injury",
+        "threat of injury",
+        "person, reputation or property",
+        "intent to cause alarm",
+        "cause alarm to that person",
+    ],
+
+    # --------------------------------------------------------
+    # SECTION 64 — RAPE
+    # --------------------------------------------------------
+    "rape": [
+        "sexual intercourse with a woman",
+        "against her will",
+        "without her consent",
+        "with or without her consent",
+    ],
+
+    # --------------------------------------------------------
+    # SECTION 75 — SEXUAL HARASSMENT
+    # --------------------------------------------------------
+    "sexual harassment": [
+        "physical contact and advances involving unwelcome",
+        "unwelcome and explicit sexual overtures",
+        "demand or request for sexual favours",
+        "showing pornography against the will",
+        "sexually coloured remarks",
+    ],
+}
+
+# ============================================================
 # QUERY OFFENCE DETECTION
 # ============================================================
 def detect_offence(query):
-
     q = query.lower().strip()
 
     # ========================================================
-    # 1. EXPLICIT OFFENCE NAMES — HIGHEST PRIORITY
+    # 1. EXPLICIT HIGH-SPECIFICITY OFFENCES
     # ========================================================
 
-    # Attempt to murder must come first because it contains
-    # the word "murder".
     if "attempt to murder" in q:
         return "attempt to murder"
 
-    # Explicit murder
-    if re.search(r"\bmurder\b", q):
-        return "murder"
-
-    # Explicit culpable homicide
     if "culpable homicide" in q:
         return "culpable homicide"
 
-    # Other explicit offence names
+    # ========================================================
+    # 2. DACOITY — CHECK BEFORE ROBBERY
+    # ========================================================
+
+    dacoity_indicators = [
+        "five or more persons",
+        "five or more people",
+        "five or more individuals",
+        "five or more persons conjointly",
+        "amount to five or more",
+        "conjointly commit",
+        "conjointly commit or attempt",
+        "persons present and aiding",
+        "five persons",
+        "five people",
+        "jointly commits robbery",
+        "jointly commit robbery",
+        "participate together in taking property",
+    ]
+
+    if any(
+        phrase in q
+        for phrase in dacoity_indicators
+    ):
+        return "dacoity"
+    
+    
+    # ========================================================
+    # 3. STOLEN PROPERTY    
+    # ========================================================
+
+    stolen_property_indicators = [
+        "knowing that the property was stolen",
+        "knowing the property was stolen",
+        "knowing or having reason to believe",
+        "knowing or having reasonable cause to believe",
+        "having reason to believe",
+        "having reasonable cause to believe",
+        "reason to believe it to be stolen",
+        "reason to believe the property was stolen",
+        "property was unlawfully obtained",
+        "property was unlawfully acquired",
+        "unlawfully obtained property",
+        "unlawfully obtained",
+        "stolen property",
+        "purchases and keeps property",
+        "purchases and keeps the property",
+        "purchases or receives",
+        "receives or retains",
+        "receives or retains such property",
+        "retains such property",
+        "dishonestly receives",
+        "dishonestly received",
+    ]
+
+    if any(
+        phrase in q
+        for phrase in stolen_property_indicators
+    ):
+        return "stolen property"
+
+
+    # ========================================================
+    # 4. CRIMINAL BREACH OF TRUST
+    # ========================================================
+
+    trust_indicators = [
+        "entrusted with property",
+        "entrusted the property",
+        "entrusted with money",
+        "entrusted money",
+        "position of trust",
+        "under a position of trust",
+        "dominion over property",
+        "dominion over the property",
+        "dishonestly misappropriates",
+        "dishonestly misappropriated",
+        "dishonestly converts",
+        "dishonestly converted",
+        "converts to his own use",
+        "converted to his own use",
+        "uses or disposes",
+        "uses or disposes of that property",
+        "discharge of such trust",
+        "in violation of any direction of law",
+        "in violation of any legal contract",
+        "uses the property as their own",
+        "uses the property as his own",
+        "uses the property as her own",
+    ]
+
+    if any(
+        phrase in q
+        for phrase in trust_indicators
+    ):
+        return "criminal breach of trust"
+
+    # ========================================================
+    # 4. EXTORTION — FEAR + INDUCEMENT / DELIVERY
+    # ========================================================
+
+    extortion_property_indicators = [
+        "deliver property",
+        "delivery of property",
+        "deliver money",
+        "delivery of money",
+        "hand over property",
+        "hand over money",
+        "hand over the property",
+        "hand over the money",
+        "dishonestly induces",
+        "dishonestly induce",
+        "induces them to hand over",
+        "induces them to deliver",
+        "induces a person to deliver",
+        "induces the person so deceived",
+        "valuable security",
+    ]
+
+    extortion_threat_indicators = [
+        "threat",
+        "threatens",
+        "threatened",
+        "threatening",
+        "fear",
+        "fear of injury",
+        "fear of harm",
+        "put in fear",
+        "puts in fear",
+        "immediate harm",
+        "physical harm",
+    ]
+
+    if (
+        any(
+            phrase in q
+            for phrase in extortion_property_indicators
+        )
+        and any(
+            phrase in q
+            for phrase in extortion_threat_indicators
+        )
+    ):
+        return "extortion"
+
+    # ========================================================
+    # 5. ROBBERY — PROPERTY TAKING + VIOLENCE / IMMEDIATE FEAR
+    # ========================================================
+
+    robbery_property_indicators = [
+        "takes property",
+        "taking property",
+        "takes the property",
+        "property is taken",
+        "property from another",
+        "property from a victim",
+        "taking property through robbery",
+    ]
+
+    robbery_force_indicators = [
+        "violence",
+        "fear of immediate harm",
+        "fear of instant harm",
+        "immediate physical harm",
+        "instant hurt",
+        "instant death",
+        "fear of instant hurt",
+        "fear of instant death",
+        "wrongful restraint",
+    ]
+
+    if (
+        any(
+            phrase in q
+            for phrase in robbery_property_indicators
+        )
+        and any(
+            phrase in q
+            for phrase in robbery_force_indicators
+        )
+    ):
+        return "robbery"
+
+    # ========================================================
+    # 6. EXPLICIT OFFENCE NAMES
+    # ========================================================
+
     explicit_offences = sorted(
         OFFENCE_SECTIONS.keys(),
         key=len,
@@ -524,13 +847,32 @@ def detect_offence(query):
             return offence
 
     # ========================================================
-    # 2. ATTEMPT-TO-MURDER CONCEPTS
+    # 7. SEXUAL HARASSMENT
+    # ========================================================
+
+    sexual_harassment_indicators = [
+        "physical contact and advances",
+        "unwelcome and explicit sexual overtures",
+        "demand or request for sexual favours",
+        "showing pornography against the will",
+        "sexually coloured remarks",
+        "sexually coloured remark",
+    ]
+
+    if any(
+        phrase in q
+        for phrase in sexual_harassment_indicators
+    ):
+        return "sexual harassment"
+
+    # ========================================================
+    # 8. ATTEMPT TO MURDER
     # ========================================================
 
     attempt_indicators = [
         "death does not occur",
-        "victim survives",
         "the victim survives",
+        "victim survives",
         "attempting to cause death",
         "attempt to cause death",
         "attempts to cause death",
@@ -548,7 +890,32 @@ def detect_offence(query):
         return "attempt to murder"
 
     # ========================================================
-    # 3. MURDER CONCEPTS
+    # 9. CULPABLE HOMICIDE
+    # ========================================================
+
+    culpable_homicide_indicators = [
+        "knowledge likely to cause death",
+        "knowledge that the act is likely to cause death",
+        "knowing that the act is likely to cause death",
+        "act likely to cause death",
+        "likely to cause death",
+        "without intention to cause death",
+        "without intending to cause death",
+        "without intent to cause death",
+        "without intention of causing death",
+        "not amounting to murder",
+        "does not amount to murder",
+        "knowledge that he is likely by such act to cause death",
+    ]
+
+    if any(
+        phrase in q
+        for phrase in culpable_homicide_indicators
+    ):
+        return "culpable homicide"
+
+    # ========================================================
+    # 10. MURDER
     # ========================================================
 
     murder_indicators = [
@@ -578,34 +945,12 @@ def detect_offence(query):
         return "murder"
 
     # ========================================================
-    # 4. CULPABLE HOMICIDE CONCEPTS
-    # ========================================================
-
-    culpable_homicide_indicators = [
-        "knowledge likely to cause death",
-        "knowledge that the act is likely to cause death",
-        "knowing that the act is likely to cause death",
-        "act likely to cause death",
-        "without intention to cause death",
-        "without intending to cause death",
-        "without intent to cause death",
-        "without intention of causing death",
-    ]
-
-    if any(
-        phrase in q
-        for phrase in culpable_homicide_indicators
-    ):
-        return "culpable homicide"
-
-    # ========================================================
-    # 5. OTHER CONCEPT-BASED DETECTION
+    # 11. HIGH-SPECIFICITY CONCEPT MATCHING
     # ========================================================
 
     concept_matches = {}
 
     for offence, phrases in LEGAL_CONCEPTS.items():
-
         matches = sum(
             1
             for phrase in phrases
@@ -620,10 +965,6 @@ def detect_offence(query):
             concept_matches,
             key=concept_matches.get
         )
-
-    # ========================================================
-    # 6. NO OFFENCE DETECTED
-    # ========================================================
 
     return None
 
@@ -719,8 +1060,7 @@ def lexical_similarity(
 def concept_score(
     offence,
     text
-):
-
+    ):
     if not offence:
         return 0.0
 
@@ -734,13 +1074,62 @@ def concept_score(
     if not phrases:
         return 0.0
 
-    matched = sum(
-        1
+    matched_phrases = [
+        phrase
         for phrase in phrases
         if phrase.lower() in text_lower
+    ]
+
+    if not matched_phrases:
+        return 0.0
+
+    # Strong evidence from multiple matching legal concepts.
+    # The score saturates once sufficient evidence is present.
+    return min(
+        len(matched_phrases) / 3.0,
+        1.0
     )
 
-    return matched / len(phrases)
+# ============================================================
+# STATUTORY ANCHOR SCORE
+# ============================================================
+
+def statutory_anchor_score(offence, text):
+    """
+    Measures how strongly a retrieved passage matches
+    provision-specific statutory language.
+
+    The score saturates at 1.0 after three matched anchors,
+    keeping it comparable with concept_score() and
+    distinction_score().
+    """
+
+    if not offence:
+        return 0.0
+
+    text_lower = text.lower()
+
+    anchors = STATUTORY_ANCHORS.get(
+        offence,
+        []
+    )
+
+    if not anchors:
+        return 0.0
+
+    matched_anchors = [
+        phrase
+        for phrase in anchors
+        if phrase.lower() in text_lower
+    ]
+
+    if not matched_anchors:
+        return 0.0
+
+    return min(
+        len(matched_anchors) / 3.0,
+        1.0
+    )
 
 # ============================================================
 # LEGAL DISTINCTION SCORE
@@ -750,7 +1139,6 @@ def distinction_score(
     offence,
     text
 ):
-
     if not offence:
         return 0.0
 
@@ -773,26 +1161,28 @@ def distinction_score(
         []
     )
 
-    positive_matches = sum(
-        1
+    positive_matches = [
+        phrase
         for phrase in positive
         if phrase.lower() in text_lower
-    )
+    ]
 
-    negative_matches = sum(
-        1
+    negative_matches = [
+        phrase
         for phrase in negative
         if phrase.lower() in text_lower
+    ]
+
+    # Positive evidence saturates at 3 matched phrases.
+    positive_score = min(
+        len(positive_matches) / 3.0,
+        1.0
     )
 
-    positive_score = (
-        positive_matches /
-        max(len(positive), 1)
-    )
-
-    negative_score = (
-        negative_matches /
-        max(len(negative), 1)
+    # Negative evidence also saturates.
+    negative_score = min(
+        len(negative_matches) / 3.0,
+        1.0
     )
 
     return max(
@@ -885,9 +1275,9 @@ def section_score(
 
 def calculate_legal_score(
     query,
-    result
+    result,
+    use_section_prior=True
 ):
-
     text = result.get(
         "text",
         ""
@@ -901,10 +1291,6 @@ def calculate_legal_score(
     offence = detect_offence(
         query
     )
-
-    # --------------------------------------------------------
-    # COMPONENTS
-    # --------------------------------------------------------
 
     lexical = lexical_similarity(
         query,
@@ -920,20 +1306,25 @@ def calculate_legal_score(
         offence,
         text
     )
+    
+    statutory_anchor = statutory_anchor_score(
+        offence,
+        text
+    )
+    
 
     punishment = punishment_score(
         query,
         text
     )
 
-    section = section_score(
-        offence,
-        metadata
-    )
-
-    # --------------------------------------------------------
-    # BASE RETRIEVAL SCORE
-    # --------------------------------------------------------
+    if use_section_prior:
+        section = section_score(
+            offence,
+            metadata
+        )
+    else:
+        section = 0.0
 
     base_score = float(
         result.get(
@@ -945,41 +1336,65 @@ def calculate_legal_score(
         )
     )
 
-    # --------------------------------------------------------
-    # LEGAL BOOST
-    # --------------------------------------------------------
-
-    legal_boost = (
-
+    section_boost = (
         section * 0.60
+    )
 
-        +
-
+    distinction_boost = (
         distinction * 0.25
+    )
 
-        +
-
+    concept_boost = (
         concept * 0.15
+    )
 
-        +
+    statutory_anchor_boost = (
+        statutory_anchor * 0.00
+    )
 
+    lexical_boost = (
         lexical * 0.05
+    )
 
-        +
-
+    punishment_boost = (
         punishment * 0.05
     )
 
-    # --------------------------------------------------------
-    # FINAL SCORE
-    # --------------------------------------------------------
+    legal_boost = (
+        section_boost
+        + distinction_boost
+        + concept_boost
+        + statutory_anchor_boost
+        + lexical_boost
+        + punishment_boost
+    )
 
     final_score = (
         base_score
-        +
-        legal_boost
+        + legal_boost
     )
 
+    # --------------------------------------------------------
+    # DIAGNOSTIC COMPONENTS
+    # --------------------------------------------------------
+
+    result["score_components"] = {
+        "base": base_score,      
+        "section": section,
+        "distinction": distinction,
+        "concept": concept,
+        "statutory_anchor": statutory_anchor,
+        "lexical": lexical,
+        "punishment": punishment,
+        "section_boost": section_boost,
+        "distinction_boost": distinction_boost,
+        "concept_boost": concept_boost,
+        "statutory_anchor_boost": statutory_anchor_boost,
+        "lexical_boost": lexical_boost,
+        "punishment_boost": punishment_boost,
+        "legal_boost": legal_boost,
+    }
+    
     return final_score
 
 # ============================================================
@@ -1124,10 +1539,15 @@ def reciprocal_rank_fusion(
 # LEGALRAG RERANKER
 # ============================================================
 
+# ============================================================
+# LEGALRAG RERANKER
+# ============================================================
+
 def rerank_results(
     query,
     results,
-    top_k=5
+    top_k=5,
+    use_section_prior=True
 ):
 
     print(
@@ -1142,6 +1562,10 @@ def rerank_results(
         f"Detected offence: {offence}"
     )
 
+    print(
+        f"Section prior enabled: {use_section_prior}"
+    )
+
     reranked = []
 
     for result in results:
@@ -1150,19 +1574,316 @@ def rerank_results(
 
         legal_score = calculate_legal_score(
             query,
-            item
+            item,
+            use_section_prior=use_section_prior
         )
 
-        item[
-            "legal_score"
-        ] = legal_score
+        components = item.get(
+            "score_components",
+            {}
+        )
+
+        item["legal_score"] = legal_score
+
+        metadata = item.get(
+            "metadata",
+            {}
+        )
+
+        section = str(
+            metadata.get(
+                "section",
+                ""
+            )
+        ).strip()
+
+        # ----------------------------------------------------
+        # EXTRACT MATCHED LEGAL EVIDENCE
+        # ----------------------------------------------------
+
+        text = item.get(
+            "text",
+            ""
+        ).lower()
+
+        matched_concepts = []
+
+        if offence:
+
+            for phrase in LEGAL_CONCEPTS.get(
+                offence,
+                []
+            ):
+
+                if phrase.lower() in text:
+
+                    matched_concepts.append(
+                        phrase
+                    )
+
+        matched_positive = []
+        matched_negative = []
+
+        if offence:
+
+            rules = LEGAL_DISTINCTIONS.get(
+                offence,
+                {}
+            )
+
+            for phrase in rules.get(
+                "positive",
+                []
+            ):
+
+                if phrase.lower() in text:
+
+                    matched_positive.append(
+                        phrase
+                    )
+
+            for phrase in rules.get(
+                "negative",
+                []
+            ):
+
+                if phrase.lower() in text:
+
+                    matched_negative.append(
+                        phrase
+                    )
+
+        # ----------------------------------------------------
+        # STORE DETAILED DIAGNOSTICS
+        # ----------------------------------------------------
+
+        item["legal_diagnostics"] = {
+
+            "query_offence": offence,
+
+            "section": section,
+
+            "base_score": components.get(
+                "base",
+                0.0
+            ),
+
+            "section_score": components.get(
+                "section",
+                0.0
+            ),
+
+            "distinction_score": components.get(
+                "distinction",
+                0.0
+            ),
+
+            "concept_score": components.get(
+                "concept",
+                0.0
+            ),
+            
+            
+
+            "lexical_score": components.get(
+                "lexical",
+                0.0
+            ),
+
+            "punishment_score": components.get(
+                "punishment",
+                0.0
+            ),
+
+            "section_boost": components.get(
+                "section_boost",
+                0.0
+            ),
+
+            "distinction_boost": components.get(
+                "distinction_boost",
+                0.0
+            ),
+
+            "concept_boost": components.get(
+                "concept_boost",
+                0.0
+            ),
+
+            "lexical_boost": components.get(
+                "lexical_boost",
+                0.0
+            ),
+
+            "punishment_boost": components.get(
+                "punishment_boost",
+                0.0
+            ),
+
+            "legal_boost": components.get(
+                "legal_boost",
+                0.0
+            ),
+
+            "final_score": components.get(
+                "final",
+                legal_score
+            ),
+
+            "matched_concepts": matched_concepts,
+
+            "matched_positive_phrases": matched_positive,
+
+            "matched_negative_phrases": matched_negative
+        }
+
+        # ----------------------------------------------------
+        # DETAILED CONSOLE DIAGNOSTIC
+        # ----------------------------------------------------
+
+        print(
+            "\n--- LEGAL RERANK DIAGNOSTIC ---"
+        )
+
+        print(
+            f"Section: {section}"
+        )
+        
+        print(
+            f"Base RRF: "
+            f"{components.get('base', 0.0):.6f}"
+            )
+        
+        print(
+            f"Section score: "
+            f"{components.get('section', 0.0):.6f}"
+        )
+        
+        print(
+            f"Distinction score: "
+            f"{components.get('distinction', 0.0):.6f}"
+        )
+        
+        print(
+            f"Concept score: "
+            f"{components.get('concept', 0.0):.6f}"
+        )
+        
+        print(
+            f"Statutory anchor score:"
+            f"{components.get('statutory_anchor', 0.0):.6f}"
+            )
+        
+        print(
+            f"Lexical score: "
+            f"{components.get('lexical', 0.0):.6f}"
+            )
+        
+        print(
+            f"Punishment score: "
+            f"{components.get('punishment', 0.0):.6f}"
+            )
+        
+        print(
+            f"Section boost: "
+            f"{components.get('section_boost', 0.0):.6f}"
+            )
+        
+        print(
+            f"Distinction boost: "
+            f"{components.get('distinction_boost', 0.0):.6f}"
+            )
+        
+        print(
+            f"Concept boost: "
+            f"{components.get('concept_boost', 0.0):.6f}"
+            )
+        
+        print(
+            f"Statutory anchor boost:"
+            f"{components.get('statutory_anchor_boost', 0.0):.6f}"
+            )
+        
+        print(
+            f"Lexical boost: "
+            f"{components.get('lexical_boost', 0.0):.6f}"
+            )
+        
+        print(
+            f"Punishment boost: "
+            f"{components.get('punishment_boost', 0.0):.6f}"
+            )
+        
+        print(
+            f"LEGAL BOOST: "
+            f"{components.get('legal_boost', 0.0):.6f}"
+            )
+        
+        print(
+            f"FINAL SCORE: "
+            f"{components.get('final', legal_score):.6f}"
+            )
+
+        print(
+            "Matched concepts:"
+        )
+
+        if matched_concepts:
+
+            for phrase in matched_concepts:
+
+                print(
+                    f"  + {phrase}"
+                )
+
+        else:
+
+            print(
+                "  None"
+            )
+
+        print(
+            "Matched positive distinction phrases:"
+        )
+
+        if matched_positive:
+
+            for phrase in matched_positive:
+
+                print(
+                    f"  + {phrase}"
+                )
+
+        else:
+
+            print(
+                "  None"
+            )
+
+        print(
+            "Matched negative distinction phrases:"
+        )
+
+        if matched_negative:
+
+            for phrase in matched_negative:
+
+                print(
+                    f"  - {phrase}"
+                )
+
+        else:
+
+            print(
+                "  None"
+            )
 
         reranked.append(
             item
         )
 
     # --------------------------------------------------------
-    # SORT
+    # SORT BY LEGAL SCORE
     # --------------------------------------------------------
 
     reranked.sort(
@@ -1172,15 +1893,12 @@ def rerank_results(
     )
 
     # --------------------------------------------------------
-    # SECTION DIVERSITY
+    # DEDUPLICATE BY SECTION
     # --------------------------------------------------------
 
     final = []
 
     seen_sections = set()
-
-    # First pass:
-    # Prefer unique sections.
 
     for result in reranked:
 
@@ -1197,9 +1915,11 @@ def rerank_results(
         ).strip()
 
         if not section:
+
             section = "UNKNOWN"
 
         if section in seen_sections:
+
             continue
 
         seen_sections.add(
@@ -1211,13 +1931,12 @@ def rerank_results(
         )
 
         if len(final) >= top_k:
+
             break
 
     # --------------------------------------------------------
-    # FALLBACK
+    # FALLBACK IF FEWER THAN TOP_K UNIQUE SECTIONS
     # --------------------------------------------------------
-    # If diversity filtering produced fewer than top_k,
-    # fill remaining positions.
 
     if len(final) < top_k:
 
@@ -1229,6 +1948,7 @@ def rerank_results(
         for result in reranked:
 
             if id(result) in selected_ids:
+
                 continue
 
             final.append(
@@ -1236,10 +1956,11 @@ def rerank_results(
             )
 
             if len(final) >= top_k:
+
                 break
 
     # --------------------------------------------------------
-    # DEBUG
+    # FINAL RANKING DISPLAY
     # --------------------------------------------------------
 
     print(
@@ -1256,10 +1977,21 @@ def rerank_results(
             {}
         )
 
+        diagnostics = result.get(
+            "legal_diagnostics",
+            {}
+        )
+
         print(
             f"{i:02d}. "
             f"Section {metadata.get('section', '?')} "
-            f"score={result['legal_score']:.6f}"
+            f"score={result['legal_score']:.6f} "
+            f"section_score="
+            f"{diagnostics.get('section_score', 0.0):.3f} "
+            f"distinction="
+            f"{diagnostics.get('distinction_score', 0.0):.3f} "
+            f"concept="
+            f"{diagnostics.get('concept_score', 0.0):.3f}"
         )
 
     return final

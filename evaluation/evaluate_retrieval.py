@@ -101,6 +101,36 @@ def reciprocal_rank(
 
     return 0.0
 
+# ============================================================
+# CANDIDATE RANK
+# ============================================================
+
+def candidate_rank(
+    results,
+    correct_section
+):
+
+    if correct_section is None:
+        return None
+
+    correct_section = str(
+        correct_section
+    ).strip()
+
+    for rank, result in enumerate(
+        results,
+        start=1
+    ):
+
+        if (
+            get_section(result)
+            ==
+            correct_section
+        ):
+
+            return rank
+
+    return None
 
 # ============================================================
 # LOAD NORMAL DATASET
@@ -307,9 +337,7 @@ def evaluate(
     print("=" * 70)
 
     for item in queries:
-        if item.get("id") not in [15, 16]:
-            continue
-
+        
         query = item[
             "query"
         ]
@@ -363,8 +391,8 @@ def evaluate(
             k=candidate_k
         )
 
-        # ====================================================
-        # RRF
+                # ====================================================
+        # RRF + CANDIDATE UNION
         # ====================================================
 
         print(
@@ -375,6 +403,138 @@ def evaluate(
             dense_results,
             bm25_results
         )
+
+        # ----------------------------------------------------
+        # PRESERVE ALL DENSE + BM25 CANDIDATES
+        # ----------------------------------------------------
+        # RRF remains the hybrid ranking signal, but candidates
+        # must not be discarded before legal-aware reranking.
+
+        candidate_map = {}
+
+        for result in dense_results:
+            metadata = result.get(
+                "metadata",
+                {}
+            )
+
+            section = str(
+                metadata.get(
+                    "section",
+                    ""
+                )
+            ).strip()
+
+            key = (
+                metadata.get(
+                    "document",
+                    ""
+                ),
+                section,
+                metadata.get(
+                    "source",
+                    ""
+                ),
+            )
+
+            candidate_map[key] = result.copy()
+
+        for result in bm25_results:
+            metadata = result.get(
+                "metadata",
+                {}
+            )
+
+            section = str(
+                metadata.get(
+                    "section",
+                    ""
+                )
+            ).strip()
+
+            key = (
+                metadata.get(
+                    "document",
+                    ""
+                ),
+                section,
+                metadata.get(
+                    "source",
+                    ""
+                ),
+            )
+
+            if key not in candidate_map:
+                candidate_map[key] = result.copy()
+
+        # ----------------------------------------------------
+        # ATTACH RRF SCORE TO UNION CANDIDATES
+        # ----------------------------------------------------
+
+        rrf_score_map = {}
+
+        for result in rrf_results:
+            metadata = result.get(
+                "metadata",
+                {}
+            )
+
+            section = str(
+                metadata.get(
+                    "section",
+                    ""
+                )
+            ).strip()
+
+            key = (
+                metadata.get(
+                    "document",
+                    ""
+                ),
+                section,
+                metadata.get(
+                    "source",
+                    ""
+                ),
+            )
+
+            rrf_score_map[key] = result.get(
+                "rrf_score",
+                0.0
+            )
+
+        for key, result in candidate_map.items():
+            result["rrf_score"] = rrf_score_map.get(
+                key,
+                0.0
+            )
+
+            result["score"] = result["rrf_score"]
+
+        # RRF-ranked candidates first, followed by candidates
+        # that appeared only in Dense/BM25.
+        candidate_union = list(
+            candidate_map.values()
+        )
+
+        candidate_union.sort(
+            key=lambda x: x.get(
+                "rrf_score",
+                0.0
+            ),
+            reverse=True
+        )
+
+        print(
+            f"RRF candidates: {len(rrf_results)}"
+        )
+
+        print(
+            f"Candidate union: {len(candidate_union)}"
+        )
+
+        # Legal reranker now sees the complete candidate pool.
+        rrf_results = candidate_union
 
         # ====================================================
         # LEGAL RERANKER
@@ -387,7 +547,15 @@ def evaluate(
         reranked_results = rerank_results(
             query,
             rrf_results,
-            top_k=candidate_k
+            top_k=10,
+            use_section_prior=True
+        )
+        
+        strict_reranked_results = rerank_results(
+            query,
+            rrf_results,
+            top_k=10,
+            use_section_prior=False
         )
 
         # ====================================================
@@ -413,6 +581,24 @@ def evaluate(
                         :TOP_K
                     ]
                 ],
+                
+                "candidate_sections": [
+                    get_section(x)
+                    for x in dense_results
+                    
+                ],
+                
+                "expected_candidate_rank": 
+                    candidate_rank(
+                        dense_results,
+                        correct_section
+                    ),
+                    
+                "candidate_recall":
+                    candidate_rank(
+                        dense_results,
+                        correct_section 
+                    ) is not None,
 
                 "recall_at_1":
                     section_in_results(
@@ -443,7 +629,7 @@ def evaluate(
             },
 
             "bm25": {
-
+ 
                 "sections": [
                     get_section(x)
                     for x in bm25_results[
@@ -517,38 +703,74 @@ def evaluate(
             },
 
             "legal_reranker": {
-
+                
                 "sections": [
                     get_section(x)
                     for x in reranked_results[
                         :TOP_K
                     ]
                 ],
-
+                
                 "recall_at_1":
                     section_in_results(
                         reranked_results,
                         correct_section,
                         1
                     ),
-
+                
                 "recall_at_3":
-                    section_in_results(
-                        reranked_results,
-                        correct_section,
-                        3
-                    ),
-
+                        section_in_results(
+                            reranked_results,
+                            correct_section,
+                            3
+                        ),
+                        
                 "recall_at_5":
                     section_in_results(
                         reranked_results,
                         correct_section,
                         5
                     ),
-
+                    
                 "reciprocal_rank":
                     reciprocal_rank(
                         reranked_results,
+                        correct_section
+                    )
+            },
+            
+            "legal_reranker_strict": {
+                "sections": [
+                    get_section(x)
+                    for x in strict_reranked_results[
+                        :TOP_K
+                    ]
+                ],
+                
+                "recall_at_1":
+                    section_in_results(
+                        strict_reranked_results,
+                        correct_section,
+                        1
+                    ),
+                    
+                "recall_at_3":
+                    section_in_results(
+                        strict_reranked_results,
+                        correct_section,
+                        3
+                    ),
+                    
+                "recall_at_5":
+                    section_in_results(
+                        strict_reranked_results,
+                        correct_section,
+                        5
+                    ),
+                    
+                "reciprocal_rank":
+                    reciprocal_rank(
+                        strict_reranked_results,
                         correct_section
                     )
             }
@@ -583,7 +805,12 @@ def evaluate(
             "LegalRAG Reranker Top-5",
             reranked_results
         )
-
+        
+        print_pipeline_results(
+            "LegalRAG Strict Reranker Top-5",
+            strict_reranked_results
+        )
+ 
     # ========================================================
     # SAVE RESULTS
     # ========================================================
@@ -641,7 +868,8 @@ def evaluate(
         "dense",
         "bm25",
         "rrf",
-        "legal_reranker"
+        "legal_reranker",
+        "legal_reranker_strict"
     ]
 
     overall_metrics = {}
