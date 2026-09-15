@@ -1,0 +1,1484 @@
+[
+  {
+    "id": 1,
+    "query": "An individual takes a movable item belonging to someone else without permission and with the intention of causing wrongful gain. Which BNS provision is relevant?",
+    "expected_section": "303",
+    "dense": {
+      "sections": [
+        "318",
+        "303",
+        "308",
+        "320",
+        "314"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.5
+    },
+    "bm25": {
+      "sections": [
+        "324",
+        "303",
+        "314",
+        "3",
+        "97"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.5
+    },
+    "rrf": {
+      "sections": [
+        "303",
+        "314",
+        "324",
+        "252",
+        "338"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "legal_reranker": {
+      "sections": [
+        "303",
+        "314",
+        "324",
+        "46",
+        "309"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "id": 2,
+    "query": "A person secretly removes an object from another person's possession without consent and intends to keep it dishonestly. Identify the applicable provision.",
+    "expected_section": "303",
+    "dense": {
+      "sections": [
+        "320",
+        "323",
+        "303",
+        "343",
+        "315"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    "bm25": {
+      "sections": [
+        "303",
+        "314",
+        "129",
+        "30",
+        "315"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "rrf": {
+      "sections": [
+        "303",
+        "314",
+        "315",
+        "320",
+        "318"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "legal_reranker": {
+      "sections": [
+        "303",
+        "314",
+        "97",
+        "30",
+        "2"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "id": 3,
+    "query": "During an incident, an offender obtains property by putting the victim in fear of immediate physical injury. Which offence is indicated?",
+    "expected_section": "309",
+    "dense": {
+      "sections": [
+        "309",
+        "307",
+        "32",
+        "43",
+        "346"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "bm25": {
+      "sections": [
+        "309",
+        "308",
+        "330",
+        "43",
+        "86"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "rrf": {
+      "sections": [
+        "309",
+        "43",
+        "308",
+        "351",
+        "129"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "legal_reranker": {
+      "sections": [
+        "351",
+        "232",
+        "308",
+        "309",
+        "224"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.25
+    }
+  },
+  {
+    "id": 4,
+    "query": "Property is forcibly taken from a person after the offender creates fear of instant harm. Which provision governs this conduct?",
+    "expected_section": "309",
+    "dense": {
+      "sections": [
+        "32",
+        "43",
+        "309",
+        "308",
+        "320"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    "bm25": {
+      "sections": [
+        "43",
+        "309",
+        "304",
+        "32",
+        "307"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.5
+    },
+    "rrf": {
+      "sections": [
+        "43",
+        "32",
+        "309",
+        "307",
+        "308"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    "legal_reranker": {
+      "sections": [
+        "351",
+        "309",
+        "308",
+        "101",
+        "223"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.5
+    }
+  },
+  {
+    "id": 5,
+    "query": "Robbery is carried out by five or more people acting together. What provision applies to this aggravated form of the offence?",
+    "expected_section": "310",
+    "dense": {
+      "sections": [
+        "309",
+        "254",
+        "311",
+        "313",
+        "312"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.14285714285714285
+    },
+    "bm25": {
+      "sections": [
+        "17",
+        "111",
+        "56",
+        "59",
+        "310"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.2
+    },
+    "rrf": {
+      "sections": [
+        "111",
+        "310",
+        "59",
+        "254",
+        "309"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.5
+    },
+    "legal_reranker": {
+      "sections": [
+        "310",
+        "189",
+        "117",
+        "103",
+        "254"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "id": 6,
+    "query": "Several persons, numbering at least five, jointly participate in committing a robbery. Identify the relevant BNS section.",
+    "expected_section": "310",
+    "dense": {
+      "sections": [
+        "309",
+        "254",
+        "311",
+        "313",
+        "312"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.14285714285714285
+    },
+    "bm25": {
+      "sections": [
+        "310",
+        "309",
+        "111",
+        "313",
+        "311"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "rrf": {
+      "sections": [
+        "309",
+        "310",
+        "311",
+        "313",
+        "254"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.5
+    },
+    "legal_reranker": {
+      "sections": [
+        "309",
+        "43",
+        "111",
+        "308",
+        "317"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "id": 7,
+    "query": "A person obtains property by deliberately making another individual afraid of harm and thereby inducing delivery of the property. Which offence applies?",
+    "expected_section": "308",
+    "dense": {
+      "sections": [
+        "308",
+        "320",
+        "324",
+        "244",
+        "351"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "bm25": {
+      "sections": [
+        "351",
+        "319",
+        "318",
+        "223",
+        "329"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.02
+    },
+    "rrf": {
+      "sections": [
+        "351",
+        "318",
+        "324",
+        "338",
+        "320"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.14285714285714285
+    },
+    "legal_reranker": {
+      "sections": [
+        "351",
+        "232",
+        "225",
+        "224",
+        "318"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "id": 8,
+    "query": "Someone obtains money from another person by creating fear of injury and compelling the person to hand it over. Identify the applicable provision.",
+    "expected_section": "308",
+    "dense": {
+      "sections": [
+        "338",
+        "308",
+        "320",
+        "318",
+        "357"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.5
+    },
+    "bm25": {
+      "sections": [
+        "309",
+        "308",
+        "28",
+        "63",
+        "100"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.5
+    },
+    "rrf": {
+      "sections": [
+        "308",
+        "309",
+        "318",
+        "316",
+        "303"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "legal_reranker": {
+      "sections": [
+        "308",
+        "318",
+        "28",
+        "309",
+        "317"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "id": 9,
+    "query": "Property has been placed in a person's custody or control, but that person later dishonestly appropriates it for personal use. Which provision is relevant?",
+    "expected_section": "316",
+    "dense": {
+      "sections": [
+        "320",
+        "315",
+        "323",
+        "314",
+        "244"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.16666666666666666
+    },
+    "bm25": {
+      "sections": [
+        "314",
+        "316",
+        "315",
+        "303",
+        "317"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.5
+    },
+    "rrf": {
+      "sections": [
+        "314",
+        "315",
+        "316",
+        "317",
+        "320"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    "legal_reranker": {
+      "sections": [
+        "227",
+        "318",
+        "308",
+        "101",
+        "2"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "id": 10,
+    "query": "An individual receives property in a position of trust and subsequently deals with it dishonestly in violation of that trust. Identify the applicable section.",
+    "expected_section": "316",
+    "dense": {
+      "sections": [
+        "316",
+        "315",
+        "320",
+        "314",
+        "318"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "bm25": {
+      "sections": [
+        "316",
+        "317",
+        "315",
+        "303",
+        "318"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "rrf": {
+      "sections": [
+        "316",
+        "315",
+        "314",
+        "318",
+        "317"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "legal_reranker": {
+      "sections": [
+        "316",
+        "315",
+        "314",
+        "303",
+        "317"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "id": 11,
+    "query": "A person knowingly deals with goods that originated from an unlawful act and retains those goods despite knowing their illicit origin. Which provision applies?",
+    "expected_section": "317",
+    "dense": {
+      "sections": [
+        "349",
+        "24",
+        "277",
+        "314",
+        "244"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.047619047619047616
+    },
+    "bm25": {
+      "sections": [
+        "350",
+        "349",
+        "193",
+        "305",
+        "3"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.07692307692307693
+    },
+    "rrf": {
+      "sections": [
+        "349",
+        "350",
+        "345",
+        "317",
+        "348"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.25
+    },
+    "legal_reranker": {
+      "sections": [
+        "2",
+        "349",
+        "324",
+        "318",
+        "45"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "id": 12,
+    "query": "Someone acquires and keeps an item despite having sufficient reason to believe that it was obtained through a criminal offence. Identify the relevant provision.",
+    "expected_section": "317",
+    "dense": {
+      "sections": [
+        "349",
+        "238",
+        "314",
+        "350",
+        "244"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.06666666666666667
+    },
+    "bm25": {
+      "sections": [
+        "193",
+        "164",
+        "3",
+        "330",
+        "294"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.1
+    },
+    "rrf": {
+      "sections": [
+        "349",
+        "314",
+        "317",
+        "238",
+        "315"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    "legal_reranker": {
+      "sections": [
+        "349",
+        "314",
+        "46",
+        "212",
+        "238"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "id": 13,
+    "query": "An individual intentionally deceives another person and thereby causes that person to part with property. Which BNS provision is applicable?",
+    "expected_section": "318",
+    "dense": {
+      "sections": [
+        "318",
+        "320",
+        "316",
+        "308",
+        "324"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "bm25": {
+      "sections": [
+        "318",
+        "319",
+        "45",
+        "324",
+        "129"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "rrf": {
+      "sections": [
+        "318",
+        "324",
+        "319",
+        "320",
+        "45"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "legal_reranker": {
+      "sections": [
+        "318",
+        "308",
+        "2",
+        "335",
+        "178"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "id": 14,
+    "query": "Through fraudulent deception, a person dishonestly causes another individual to transfer property. Identify the applicable offence provision.",
+    "expected_section": "318",
+    "dense": {
+      "sections": [
+        "320",
+        "322",
+        "318",
+        "244",
+        "323"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    "bm25": {
+      "sections": [
+        "322",
+        "319",
+        "83",
+        "245",
+        "2"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.14285714285714285
+    },
+    "rrf": {
+      "sections": [
+        "322",
+        "320",
+        "318",
+        "317",
+        "315"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    "legal_reranker": {
+      "sections": [
+        "318",
+        "2",
+        "322",
+        "335",
+        "317"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "id": 15,
+    "query": "A person deliberately causes another individual's death with the intention that the person should die. Which provision applies?",
+    "expected_section": "103",
+    "dense": {
+      "sections": [
+        "100",
+        "102",
+        "109",
+        "26",
+        "324"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.029411764705882353
+    },
+    "bm25": {
+      "sections": [
+        "46",
+        "100",
+        "307",
+        "101",
+        "3"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.020833333333333332
+    },
+    "rrf": {
+      "sections": [
+        "100",
+        "101",
+        "109",
+        "46",
+        "324"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.047619047619047616
+    },
+    "legal_reranker": {
+      "sections": [
+        "101",
+        "46",
+        "100",
+        "324",
+        "109"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "id": 16,
+    "query": "An offender intentionally performs an act resulting in the death of another human being. Identify the relevant BNS provision.",
+    "expected_section": "103",
+    "dense": {
+      "sections": [
+        "100",
+        "109",
+        "110",
+        "55",
+        "46"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.0
+    },
+    "bm25": {
+      "sections": [
+        "3",
+        "354",
+        "101",
+        "61",
+        "9"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.0
+    },
+    "rrf": {
+      "sections": [
+        "100",
+        "354",
+        "55",
+        "46",
+        "49"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.0
+    },
+    "legal_reranker": {
+      "sections": [
+        "100",
+        "354",
+        "55",
+        "46",
+        "49"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "id": 17,
+    "query": "An act results in death where the person acting has the necessary knowledge that the conduct is likely to cause death. Which provision is relevant?",
+    "expected_section": "105",
+    "dense": {
+      "sections": [
+        "100",
+        "24",
+        "109",
+        "19",
+        "42"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.05263157894736842
+    },
+    "bm25": {
+      "sections": [
+        "100",
+        "37",
+        "3",
+        "27",
+        "46"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.16666666666666666
+    },
+    "rrf": {
+      "sections": [
+        "100",
+        "26",
+        "19",
+        "30",
+        "109"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.1
+    },
+    "legal_reranker": {
+      "sections": [
+        "105",
+        "100",
+        "101",
+        "106",
+        "113"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "id": 18,
+    "query": "A person causes a fatal result while possessing the intention or knowledge specified for culpable homicide. Identify the applicable provision.",
+    "expected_section": "105",
+    "dense": {
+      "sections": [
+        "105",
+        "100",
+        "110",
+        "109",
+        "102"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "bm25": {
+      "sections": [
+        "100",
+        "106",
+        "110",
+        "105",
+        "101"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.25
+    },
+    "rrf": {
+      "sections": [
+        "100",
+        "105",
+        "110",
+        "106",
+        "109"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.5
+    },
+    "legal_reranker": {
+      "sections": [
+        "105",
+        "100",
+        "101",
+        "106",
+        "3"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "id": 19,
+    "query": "An individual attempts to kill another person by taking a substantial step toward causing death, but the intended victim survives. Which provision applies?",
+    "expected_section": "109",
+    "dense": {
+      "sections": [
+        "100",
+        "102",
+        "32",
+        "109",
+        "110"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.25
+    },
+    "bm25": {
+      "sections": [
+        "100",
+        "101",
+        "124",
+        "30",
+        "172"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.125
+    },
+    "rrf": {
+      "sections": [
+        "100",
+        "101",
+        "109",
+        "102",
+        "26"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    "legal_reranker": {
+      "sections": [
+        "109",
+        "330",
+        "30",
+        "27",
+        "44"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "id": 20,
+    "query": "A person acts with the intention or knowledge necessary for causing death, but the attempted act does not result in the victim's death. Identify the relevant section.",
+    "expected_section": "109",
+    "dense": {
+      "sections": [
+        "100",
+        "102",
+        "26",
+        "24",
+        "110"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.125
+    },
+    "bm25": {
+      "sections": [
+        "100",
+        "109",
+        "37",
+        "3",
+        "46"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.5
+    },
+    "rrf": {
+      "sections": [
+        "100",
+        "109",
+        "101",
+        "46",
+        "30"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.5
+    },
+    "legal_reranker": {
+      "sections": [
+        "100",
+        "46",
+        "109",
+        "101",
+        "30"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.3333333333333333
+    }
+  },
+  {
+    "id": 21,
+    "query": "A person deliberately threatens another individual's safety or reputation with the purpose of frightening that person. Which provision applies?",
+    "expected_section": "351",
+    "dense": {
+      "sections": [
+        "308",
+        "225",
+        "224",
+        "351",
+        "232"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.25
+    },
+    "bm25": {
+      "sections": [
+        "232",
+        "351",
+        "319",
+        "356",
+        "172"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.5
+    },
+    "rrf": {
+      "sections": [
+        "232",
+        "351",
+        "308",
+        "356",
+        "354"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.5
+    },
+    "legal_reranker": {
+      "sections": [
+        "351",
+        "232",
+        "225",
+        "224",
+        "227"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "id": 22,
+    "query": "Someone threatens to cause harm to another person's property or reputation in order to create alarm. Identify the applicable provision.",
+    "expected_section": "351",
+    "dense": {
+      "sections": [
+        "351",
+        "308",
+        "324",
+        "225",
+        "232"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "bm25": {
+      "sections": [
+        "351",
+        "232",
+        "19",
+        "223",
+        "26"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "rrf": {
+      "sections": [
+        "351",
+        "232",
+        "308",
+        "356",
+        "354"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "legal_reranker": {
+      "sections": [
+        "351",
+        "232",
+        "225",
+        "224",
+        "308"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "id": 23,
+    "query": "An individual deliberately blocks another person's path even though that person has a legal right to proceed in that direction. Which provision is relevant?",
+    "expected_section": "126",
+    "dense": {
+      "sections": [
+        "126",
+        "265",
+        "127",
+        "129",
+        "36"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "bm25": {
+      "sections": [
+        "126",
+        "37",
+        "30",
+        "3",
+        "255"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "rrf": {
+      "sections": [
+        "126",
+        "303",
+        "36",
+        "255",
+        "46"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "legal_reranker": {
+      "sections": [
+        "126",
+        "127",
+        "335",
+        "330",
+        "324"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "id": 24,
+    "query": "A person prevents another individual from moving beyond a particular boundary or leaving a confined area. Identify the applicable provision.",
+    "expected_section": "127",
+    "dense": {
+      "sections": [
+        "265",
+        "263",
+        "127",
+        "330",
+        "126"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    "bm25": {
+      "sections": [
+        "127",
+        "207",
+        "319",
+        "321",
+        "157"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "rrf": {
+      "sections": [
+        "127",
+        "263",
+        "321",
+        "156",
+        "207"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "legal_reranker": {
+      "sections": [
+        "127",
+        "263",
+        "321",
+        "207",
+        "303"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "id": 25,
+    "query": "A person engages in sexual intercourse with another individual in circumstances where the required consent is absent. Which BNS provision applies?",
+    "expected_section": "64",
+    "dense": {
+      "sections": [
+        "68",
+        "30",
+        "28",
+        "67",
+        "63"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.034482758620689655
+    },
+    "bm25": {
+      "sections": [
+        "63",
+        "67",
+        "77",
+        "144",
+        "68"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.0
+    },
+    "rrf": {
+      "sections": [
+        "63",
+        "68",
+        "67",
+        "77",
+        "69"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": false,
+      "recall_at_5": false,
+      "reciprocal_rank": 0.020833333333333332
+    },
+    "legal_reranker": {
+      "sections": [
+        "64",
+        "63",
+        "72",
+        "68",
+        "69"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "id": 26,
+    "query": "An individual makes unwelcome sexual comments or engages in other specified unwelcome sexual conduct toward another person. Identify the relevant provision.",
+    "expected_section": "75",
+    "dense": {
+      "sections": [
+        "68",
+        "69",
+        "75",
+        "79",
+        "81"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    "bm25": {
+      "sections": [
+        "75",
+        "63",
+        "144",
+        "95",
+        "63"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    "rrf": {
+      "sections": [
+        "63",
+        "75",
+        "68",
+        "69",
+        "319"
+      ],
+      "recall_at_1": false,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 0.5
+    },
+    "legal_reranker": {
+      "sections": [
+        "75",
+        "77",
+        "63",
+        "356",
+        "319"
+      ],
+      "recall_at_1": true,
+      "recall_at_3": true,
+      "recall_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "query": "An individual takes a movable item belonging to someone else without permission and with the intention of causing wrongful gain. Which BNS provision is relevant?",
+    "expected_section": "303"
+  },
+  {
+    "id": 2,
+    "query": "A person secretly removes an object from another person's possession without consent and intends to keep it dishonestly. Identify the applicable provision.",
+    "expected_section": "303"
+  },
+  {
+    "id": 3,
+    "query": "During an incident, an offender obtains property by putting the victim in fear of immediate physical injury. Which offence is indicated?",
+    "expected_section": "309"
+  },
+  {
+    "id": 4,
+    "query": "Property is forcibly taken from a person after the offender creates fear of instant harm. Which provision governs this conduct?",
+    "expected_section": "309"
+  },
+  {
+    "id": 5,
+    "query": "Robbery is carried out by five or more people acting together. What provision applies to this aggravated form of the offence?",
+    "expected_section": "310"
+  },
+  {
+    "id": 6,
+    "query": "Several persons, numbering at least five, jointly participate in committing a robbery. Identify the relevant BNS section.",
+    "expected_section": "310"
+  },
+  {
+    "id": 7,
+    "query": "A person obtains property by deliberately making another individual afraid of harm and thereby inducing delivery of the property. Which offence applies?",
+    "expected_section": "308"
+  },
+  {
+    "id": 8,
+    "query": "Someone obtains money from another person by creating fear of injury and compelling the person to hand it over. Identify the applicable provision.",
+    "expected_section": "308"
+  },
+  {
+    "id": 9,
+    "query": "Property has been placed in a person's custody or control, but that person later dishonestly appropriates it for personal use. Which provision is relevant?",
+    "expected_section": "316"
+  },
+  {
+    "id": 10,
+    "query": "An individual receives property in a position of trust and subsequently deals with it dishonestly in violation of that trust. Identify the applicable section.",
+    "expected_section": "316"
+  },
+  {
+    "id": 11,
+    "query": "A person knowingly deals with goods that originated from an unlawful act and retains those goods despite knowing their illicit origin. Which provision applies?",
+    "expected_section": "317"
+  },
+  {
+    "id": 12,
+    "query": "Someone acquires and keeps an item despite having sufficient reason to believe that it was obtained through a criminal offence. Identify the relevant provision.",
+    "expected_section": "317"
+  },
+  {
+    "id": 13,
+    "query": "An individual intentionally deceives another person and thereby causes that person to part with property. Which BNS provision is applicable?",
+    "expected_section": "318"
+  },
+  {
+    "id": 14,
+    "query": "Through fraudulent deception, a person dishonestly causes another individual to transfer property. Identify the applicable offence provision.",
+    "expected_section": "318"
+  },
+  {
+    "id": 15,
+    "query": "A person deliberately causes another individual's death with the intention that the person should die. Which provision applies?",
+    "expected_section": "103"
+  },
+  {
+    "id": 16,
+    "query": "An offender intentionally performs an act resulting in the death of another human being. Identify the relevant BNS provision.",
+    "expected_section": "103"
+  },
+  {
+    "id": 17,
+    "query": "An act results in death where the person acting has the necessary knowledge that the conduct is likely to cause death. Which provision is relevant?",
+    "expected_section": "105"
+  },
+  {
+    "id": 18,
+    "query": "A person causes a fatal result while possessing the intention or knowledge specified for culpable homicide. Identify the applicable provision.",
+    "expected_section": "105"
+  },
+  {
+    "id": 19,
+    "query": "An individual attempts to kill another person by taking a substantial step toward causing death, but the intended victim survives. Which provision applies?",
+    "expected_section": "109"
+  },
+  {
+    "id": 20,
+    "query": "A person acts with the intention or knowledge necessary for causing death, but the attempted act does not result in the victim's death. Identify the relevant section.",
+    "expected_section": "109"
+  },
+  {
+    "id": 21,
+    "query": "A person deliberately threatens another individual's safety or reputation with the purpose of frightening that person. Which provision applies?",
+    "expected_section": "351"
+  },
+  {
+    "id": 22,
+    "query": "Someone threatens to cause harm to another person's property or reputation in order to create alarm. Identify the applicable provision.",
+    "expected_section": "351"
+  },
+  {
+    "id": 23,
+    "query": "An individual deliberately blocks another person's path even though that person has a legal right to proceed in that direction. Which provision is relevant?",
+    "expected_section": "126"
+  },
+  {
+    "id": 24,
+    "query": "A person prevents another individual from moving beyond a particular boundary or leaving a confined area. Identify the applicable provision.",
+    "expected_section": "127"
+  },
+  {
+    "id": 25,
+    "query": "A person engages in sexual intercourse with another individual in circumstances where the required consent is absent. Which BNS provision applies?",
+    "expected_section": "64"
+  },
+  {
+    "id": 26,
+    "query": "An individual makes unwelcome sexual comments or engages in other specified unwelcome sexual conduct toward another person. Identify the relevant provision.",
+    "expected_section": "75"
+  }
+]

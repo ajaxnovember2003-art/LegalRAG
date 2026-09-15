@@ -1,0 +1,30 @@
+[
+  {
+    "id": 15,
+    "query": "A person deliberately causes another individual's death with the intention that the person should die. Which provision applies?",
+    "expected_section": "103",
+    "dense_candidate_count": 0,
+    "bm25_candidate_count": 0,
+    "dense_expected_rank": null,
+    "bm25_expected_rank": null,
+    "dense_contains_expected": false,
+    "bm25_contains_expected": false,
+    "bottleneck": "CANDIDATE_GENERATION",
+    "dense_candidates": [],
+    "bm25_candidates": []
+  },
+  {
+    "id": 16,
+    "query": "An offender intentionally performs an act resulting in the death of another human being. Identify the relevant BNS provision.",
+    "expected_section": "103",
+    "dense_candidate_count": 0,
+    "bm25_candidate_count": 0,
+    "dense_expected_rank": null,
+    "bm25_expected_rank": null,
+    "dense_contains_expected": false,
+    "bm25_contains_expected": false,
+    "bottleneck": "CANDIDATE_GENERATION",
+    "dense_candidates": [],
+    "bm25_candidates": []
+  }
+]

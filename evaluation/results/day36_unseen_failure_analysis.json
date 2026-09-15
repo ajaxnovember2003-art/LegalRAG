@@ -1,0 +1,382 @@
+[
+  {
+    "id": 3,
+    "query": "During an incident, an offender obtains property by putting the victim in fear of immediate physical injury. Which offence is indicated?",
+    "expected_section": "309",
+    "dense_top5": [
+      "309",
+      "307",
+      "32",
+      "43",
+      "346"
+    ],
+    "bm25_top5": [
+      "309",
+      "308",
+      "330",
+      "43",
+      "86"
+    ],
+    "rrf_top5": [
+      "309",
+      "43",
+      "308",
+      "351",
+      "129"
+    ],
+    "legal_reranker_top5": [
+      "351",
+      "232",
+      "308",
+      "309",
+      "224"
+    ],
+    "dense_contains_expected": true,
+    "bm25_contains_expected": true,
+    "rrf_contains_expected": true,
+    "legal_contains_expected": true,
+    "bottleneck": "RERANKER_FAILURE"
+  },
+  {
+    "id": 4,
+    "query": "Property is forcibly taken from a person after the offender creates fear of instant harm. Which provision governs this conduct?",
+    "expected_section": "309",
+    "dense_top5": [
+      "32",
+      "43",
+      "309",
+      "308",
+      "320"
+    ],
+    "bm25_top5": [
+      "43",
+      "309",
+      "304",
+      "32",
+      "307"
+    ],
+    "rrf_top5": [
+      "43",
+      "32",
+      "309",
+      "307",
+      "308"
+    ],
+    "legal_reranker_top5": [
+      "351",
+      "309",
+      "308",
+      "101",
+      "223"
+    ],
+    "dense_contains_expected": true,
+    "bm25_contains_expected": true,
+    "rrf_contains_expected": true,
+    "legal_contains_expected": true,
+    "bottleneck": "RERANKER_FAILURE"
+  },
+  {
+    "id": 6,
+    "query": "Several persons, numbering at least five, jointly participate in committing a robbery. Identify the relevant BNS section.",
+    "expected_section": "310",
+    "dense_top5": [
+      "309",
+      "254",
+      "311",
+      "313",
+      "312"
+    ],
+    "bm25_top5": [
+      "310",
+      "309",
+      "111",
+      "313",
+      "311"
+    ],
+    "rrf_top5": [
+      "309",
+      "310",
+      "311",
+      "313",
+      "254"
+    ],
+    "legal_reranker_top5": [
+      "309",
+      "43",
+      "111",
+      "308",
+      "317"
+    ],
+    "dense_contains_expected": false,
+    "bm25_contains_expected": true,
+    "rrf_contains_expected": true,
+    "legal_contains_expected": false,
+    "bottleneck": "RERANKER_FAILURE"
+  },
+  {
+    "id": 7,
+    "query": "A person obtains property by deliberately making another individual afraid of harm and thereby inducing delivery of the property. Which offence applies?",
+    "expected_section": "308",
+    "dense_top5": [
+      "308",
+      "320",
+      "324",
+      "244",
+      "351"
+    ],
+    "bm25_top5": [
+      "351",
+      "319",
+      "318",
+      "223",
+      "329"
+    ],
+    "rrf_top5": [
+      "351",
+      "318",
+      "324",
+      "338",
+      "320"
+    ],
+    "legal_reranker_top5": [
+      "351",
+      "232",
+      "225",
+      "224",
+      "318"
+    ],
+    "dense_contains_expected": true,
+    "bm25_contains_expected": false,
+    "rrf_contains_expected": false,
+    "legal_contains_expected": false,
+    "bottleneck": "RRF_FAILURE"
+  },
+  {
+    "id": 9,
+    "query": "Property has been placed in a person's custody or control, but that person later dishonestly appropriates it for personal use. Which provision is relevant?",
+    "expected_section": "316",
+    "dense_top5": [
+      "320",
+      "315",
+      "323",
+      "314",
+      "244"
+    ],
+    "bm25_top5": [
+      "314",
+      "316",
+      "315",
+      "303",
+      "317"
+    ],
+    "rrf_top5": [
+      "314",
+      "315",
+      "316",
+      "317",
+      "320"
+    ],
+    "legal_reranker_top5": [
+      "227",
+      "318",
+      "308",
+      "101",
+      "2"
+    ],
+    "dense_contains_expected": false,
+    "bm25_contains_expected": true,
+    "rrf_contains_expected": true,
+    "legal_contains_expected": false,
+    "bottleneck": "RERANKER_FAILURE"
+  },
+  {
+    "id": 11,
+    "query": "A person knowingly deals with goods that originated from an unlawful act and retains those goods despite knowing their illicit origin. Which provision applies?",
+    "expected_section": "317",
+    "dense_top5": [
+      "349",
+      "24",
+      "277",
+      "314",
+      "244"
+    ],
+    "bm25_top5": [
+      "350",
+      "349",
+      "193",
+      "305",
+      "3"
+    ],
+    "rrf_top5": [
+      "349",
+      "350",
+      "345",
+      "317",
+      "348"
+    ],
+    "legal_reranker_top5": [
+      "2",
+      "349",
+      "324",
+      "318",
+      "45"
+    ],
+    "dense_contains_expected": false,
+    "bm25_contains_expected": false,
+    "rrf_contains_expected": true,
+    "legal_contains_expected": false,
+    "bottleneck": "RERANKER_FAILURE"
+  },
+  {
+    "id": 12,
+    "query": "Someone acquires and keeps an item despite having sufficient reason to believe that it was obtained through a criminal offence. Identify the relevant provision.",
+    "expected_section": "317",
+    "dense_top5": [
+      "349",
+      "238",
+      "314",
+      "350",
+      "244"
+    ],
+    "bm25_top5": [
+      "193",
+      "164",
+      "3",
+      "330",
+      "294"
+    ],
+    "rrf_top5": [
+      "349",
+      "314",
+      "317",
+      "238",
+      "315"
+    ],
+    "legal_reranker_top5": [
+      "349",
+      "314",
+      "46",
+      "212",
+      "238"
+    ],
+    "dense_contains_expected": false,
+    "bm25_contains_expected": false,
+    "rrf_contains_expected": true,
+    "legal_contains_expected": false,
+    "bottleneck": "RERANKER_FAILURE"
+  },
+  {
+    "id": 15,
+    "query": "A person deliberately causes another individual's death with the intention that the person should die. Which provision applies?",
+    "expected_section": "103",
+    "dense_top5": [
+      "100",
+      "102",
+      "109",
+      "26",
+      "324"
+    ],
+    "bm25_top5": [
+      "46",
+      "100",
+      "307",
+      "101",
+      "3"
+    ],
+    "rrf_top5": [
+      "100",
+      "101",
+      "109",
+      "46",
+      "324"
+    ],
+    "legal_reranker_top5": [
+      "101",
+      "46",
+      "100",
+      "324",
+      "109"
+    ],
+    "dense_contains_expected": false,
+    "bm25_contains_expected": false,
+    "rrf_contains_expected": false,
+    "legal_contains_expected": false,
+    "bottleneck": "CANDIDATE_GENERATION_FAILURE"
+  },
+  {
+    "id": 16,
+    "query": "An offender intentionally performs an act resulting in the death of another human being. Identify the relevant BNS provision.",
+    "expected_section": "103",
+    "dense_top5": [
+      "100",
+      "109",
+      "110",
+      "55",
+      "46"
+    ],
+    "bm25_top5": [
+      "3",
+      "354",
+      "101",
+      "61",
+      "9"
+    ],
+    "rrf_top5": [
+      "100",
+      "354",
+      "55",
+      "46",
+      "49"
+    ],
+    "legal_reranker_top5": [
+      "100",
+      "354",
+      "55",
+      "46",
+      "49"
+    ],
+    "dense_contains_expected": false,
+    "bm25_contains_expected": false,
+    "rrf_contains_expected": false,
+    "legal_contains_expected": false,
+    "bottleneck": "CANDIDATE_GENERATION_FAILURE"
+  },
+  {
+    "id": 20,
+    "query": "A person acts with the intention or knowledge necessary for causing death, but the attempted act does not result in the victim's death. Identify the relevant section.",
+    "expected_section": "109",
+    "dense_top5": [
+      "100",
+      "102",
+      "26",
+      "24",
+      "110"
+    ],
+    "bm25_top5": [
+      "100",
+      "109",
+      "37",
+      "3",
+      "46"
+    ],
+    "rrf_top5": [
+      "100",
+      "109",
+      "101",
+      "46",
+      "30"
+    ],
+    "legal_reranker_top5": [
+      "100",
+      "46",
+      "109",
+      "101",
+      "30"
+    ],
+    "dense_contains_expected": false,
+    "bm25_contains_expected": true,
+    "rrf_contains_expected": true,
+    "legal_contains_expected": true,
+    "bottleneck": "RERANKER_FAILURE"
+  }
+]
